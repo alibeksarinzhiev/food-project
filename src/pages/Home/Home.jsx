@@ -21,7 +21,8 @@ const Home = () => {
                 </div>
                 <div className='home__cards'>
                     {
-                        product.map((el)=>(
+                        product
+                            .map((el)=>(
                             <Card el={el}/>
                         ))
                     }
