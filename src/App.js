@@ -12,12 +12,8 @@ import SingleCard from './pages/SingleCardPage/SingleCard';
 const App = () => {
     return (
         <>
-<<<<<<< HEAD
-<Header/>
-
-=======
             <Routes>
-                <Route path='/' element={<Layout/>}>
+                 <Route path='/' element={<Layout/>}>
                     <Route path=''element={<Home/>}/>
                     <Route path='single' element={<SingleCard/>}/>
                     <Route/>
@@ -26,7 +22,6 @@ const App = () => {
                     <Route/>
                 </Route>
             </Routes>
->>>>>>> b3b61704530f840b03e0a200102a37991e0a230a
         </>
     );
 };
