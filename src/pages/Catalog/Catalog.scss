@@ -1,0 +1,32 @@
+.catalog{
+  margin: 30px;
+//   background: rgb(253, 253, 222);
+h2{
+    font-size: 40px;
+    margin-left: 10px;
+    color: #414141;
+    ;
+}
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 30px;
+  }
+  &__card{
+  position: relative;
+  }
+  &__p{
+    position: absolute;
+  bottom: 15px;
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  }
+
+    // img{
+    //  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%);
+    // }
+}
