@@ -3,7 +3,8 @@ import './Catalog.scss'
 
 const Catalog = () => {
     return (
-        <div className='catalog'>
+        <section className='catalog'>
+            <div className="container">
             <h2>Каталог</h2>
             <div className="catalog__cards">
                 <div className="catalog__card">
@@ -60,7 +61,8 @@ const Catalog = () => {
                 </div>
 
             </div>
-        </div>
+            </div>
+        </section>
     );
 };
 
