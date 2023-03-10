@@ -1,0 +1,192 @@
+.cardWrapper {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    column-gap: 30px;
+    margin-bottom: 120px;
+    grid-template-columns: 1fr 1fr;
+
+    &__itemLeftSide {
+        height: 100%;
+        display: grid;
+        row-gap: 15px;
+        grid-template-columns: 1fr 86%;
+        grid-template-rows: repeat(5, 1fr);
+
+        .leftItem {
+            width: 60px;
+            height: 100%;
+            background-color: #af911a;
+            border-radius: 4px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .leftMainItem {
+            position: relative;
+            grid-row-end: 6;
+            grid-row-start: 1;
+            grid-column-end: 3;
+            grid-column-start: 2;
+            border-radius: 4px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+            img {
+                width: 100%;
+
+            }
+
+            span {
+                top: 20px;
+                right: 20px;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 6px;
+                position: absolute;
+                background-color: #FF6633;
+            }
+        }
+    }
+
+    &__itemDiscriptionSide {
+        display: grid;
+        column-gap: 30px;
+        grid-template-columns: 70% 1fr;
+
+        .discriptionSide {
+
+            &__pricePanel {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+
+                .price {
+                    font-size: 24px;
+                    color: #606060;
+                    align-self: flex-end;
+                }
+
+                .greyReminder {
+                    font-size: 12px;
+                    color: #BFBFBF;
+                    margin-top: 10px;
+                }
+
+                .salePrice {
+                    font-size: 36px;
+                    justify-self: end;
+                    letter-spacing: 2px;
+                    grid-row-end: 2;
+                    grid-row-start: 1;
+                    grid-column-start: 2;
+                }
+
+
+                .Reminder {
+                    font-size: 12px;
+                    color: #BFBFBF;
+                    margin-top: 10px;
+                    justify-self: end;
+                    position: relative;
+
+                    .content {
+                        right: 25px;
+                        top: -10px;
+                        opacity: 0;
+                        width: 170px;
+                        padding: 5px 8px;
+                        border-radius: 4px;
+                        word-wrap: break-word;
+                        visibility: hidden;
+                        position: absolute;
+                        transition-duration: 1s;
+                        background-color: #606060;
+                    }
+
+                    span {
+                        color: black;
+                        padding: 3px 9px;
+                        margin-left: 10px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        border: 1px solid black;
+
+                        &:hover~.content {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+
+            .addBasket {
+                width: 100%;
+                border: none;
+                display: grid;
+                padding: 15px;
+                color: white;
+                font-size: 24px;
+                font-weight: 400;
+                border-radius: 6px;
+                letter-spacing: 2px;
+                align-items: center;
+                background-color: #FF6633;
+                grid-template-columns: 10% 1fr;
+
+                span {
+                    justify-self: start;
+                }
+            }
+
+            .notifyPanel {
+                display: grid;
+                justify-content: center;
+                grid-template-rows: 1fr 1fr;
+
+                article {
+                    display: flex;
+                    margin: 7px 0;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        font-size: 12px;
+                        margin-left: 20px;
+                    }
+
+                    .bonus {
+                        color: #70C05B;
+                    }
+                }
+            }
+
+            .producedBy {
+                display: grid;
+                font-size: 12px;
+                grid-template-rows: repeat(3, 1fr);
+                margin-top: 10px;
+
+                .grey {
+                    background-color: #dedddd;
+                }
+
+                article {
+                    padding: 5px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+
+        .sameProductSide {
+            display: grid;
+            row-gap: 15px;
+            grid-template-rows: 15px 1fr 1fr 1fr 1fr;
+
+            article {
+                background-color: blueviolet;
+                border-radius: 4px;
+                box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}

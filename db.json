@@ -5,10 +5,10 @@
       "id": 1,
       "image":"image/image (18).png",
       "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44,50",
+      "price": "44.50",
       "sale": true,
       "category": "блины",
-      "paymentcard": "С картой",
+      "paymentcard": true,
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale"
@@ -18,7 +18,7 @@
       "image":"image/image (19).png",
       "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
       "price": "44,50",
-      "sale": true,
+      "sale": false,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -47,8 +47,6 @@
       "withoutsale": "50",
       "status": "sale"
     }
-    
-
   ]
 
 }
