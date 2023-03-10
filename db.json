@@ -17,11 +17,36 @@
       "image":"image/image (19).png",
       "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
       "price": "44,50",
-      "sale": false,
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50"
+    },
+    {
+      "id": 3,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50"
+    },
+    {
+      "id": 4,
+      "image":"image/img4.png",
+      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      "price": "44,50",
+      "sale": true,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50"
     }
+    
+
   ]
+
 }
