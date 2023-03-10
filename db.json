@@ -10,7 +10,8 @@
       "category": "блины",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
-      "withoutsale": "50"
+      "withoutsale": "50",
+      "status": "sale"
     },
     {
       "id": 2,
@@ -43,7 +44,8 @@
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
-      "withoutsale": "50"
+      "withoutsale": "50",
+      "status": "sale"
     }
     
 
