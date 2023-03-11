@@ -5,10 +5,10 @@
       "id": 1,
       "image":"image/image (18).png",
       "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44,50",
+      "price": "44.50",
       "sale": true,
       "category": "блины",
-      "paymentcard": "С картой",
+      "paymentcard": true,
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale"
@@ -24,6 +24,92 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale"
+    },
+    {
+      "id": 3,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new"
+    },
+    {
+      "id": 4,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new"
+
+    },
+    {
+      "id": 5,
+      "image":"image/image (19).png",
+      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "sale"
+    },
+    {
+      "id": 6,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new"
+    },
+    {
+      "id": 7,
+      "image":"image/image (19).png",
+      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "sale"
+    },
+    {
+      "id": 8,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new"
+    },
+    {
+      "id": 9,
+      "image":"image/image (18).png",
+      "title": "Г/Ц Блинчики с мясом вес, Россия",
+      "price": "44.50",
+      "sale": true,
+      "category": "блины",
+      "paymentcard": true,
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "sale"
     }
   ]
+
 }
