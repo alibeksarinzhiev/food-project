@@ -4,7 +4,8 @@ import Home from "./pages/Home/Home"
 import './App.scss'
 import Layout from './Layout/Layout';
 import SingleCard from './pages/SingleCardPage/SingleCard';
-import Catalog from './pages/Catalog/Catalog'
+import Catalog from './pages/Catalog/Catalog';
+import Basket from './pages/Basket/Basket';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
                     <Route path='' element={<Home/>}/>
                     <Route path='single' element={<SingleCard/>}/>
                     <Route path='catalog' element={<Catalog/>}/>
-                    <Route/>
+                    <Route path='basket' element={<Basket/>}/>
                     <Route/>
                     <Route/>
                 </Route>
