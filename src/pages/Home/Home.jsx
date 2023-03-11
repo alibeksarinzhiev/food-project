@@ -17,8 +17,8 @@ const Home = () => {
         <section className='home' style={{background:'#FBF8EC'}}>
             <div className="container">
                 <div className='home__sale'>
-                    <h2>Акции</h2>
-                    <p>Все акции</p>
+                    <h2 className='first'>Акции</h2>
+                    <p className='all'>Все акции</p>
                 </div>
                 <div className='home__cards'>
                     {
@@ -28,6 +28,29 @@ const Home = () => {
                         ))
                     }
                 </div>
+                <div className='home__new'>
+                    <h2 className='first'>Новинки</h2>
+                    <p className='all'>Все новинки</p>
+                </div>
+                <div className='home__cards'>
+                    {
+                        product.map((el)=>(
+                            <Card el={el}/>
+                        ))
+                    }
+                </div>
+                <div className='home__prev'>
+                    <h2 className='first'>Покупали раньше</h2>
+                    <p className='all'>Все покупки</p>
+                </div>
+                <div className='home__cards'>
+                    {
+                        product.map((el)=>(
+                            <Card el={el}/>
+                        ))
+                    }
+                </div>
+                
             </div>
 
 
