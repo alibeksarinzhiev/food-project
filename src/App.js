@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home"
 import Layout from './Layout/Layout';
 import Catalog from './pages/Catalog/Catalog'
 import SingleCard from './pages/SingleCardPage/SingleCard';
+import Favourite from './pages/Favourite/Favourite'
 
 import './App.scss'
 
@@ -18,7 +19,7 @@ const App = () => {
                     <Route path='' element={<Home/>}/>
                     <Route path='single/:id' element={<SingleCard/>}/>
                     <Route path='catalog' element={<Catalog/>}/>
-                    <Route/>
+                    <Route path='favourite' element={<Favourite/>}/>
                     <Route/>
                     <Route/>
                 </Route>
