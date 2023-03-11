@@ -3,14 +3,22 @@ import axios from "axios";
 import Card from '../../Components/Card/Card'
 import './Home.scss'
 import banner from './Sliders.png'
+import { useSelector, useDispatch } from 'react-redux'
+import {setAllProducts} from '../../redux/reducer/products'
+
 
 
 const Home = () => {
+    const {data} = useSelector((state)=>state.products)
+
+
+    const dispatch = useDispatch()
+
     useEffect(()=>{
         axios("http://localhost:8080/product")
-            .then(({data})=>setProduct(data))
+            .then(({data})=>dispatch(setAllProducts(data)))
     },[])
-    const [product,setProduct] = useState([])
+
 
         const [all,setAll] = useState(false)
 
@@ -28,12 +36,12 @@ const Home = () => {
                 </div>
                 <div className='home__cards'>
                     {
-                        all?   product.filter((el)=>el.status==='sale')
+                        all?   data.filter((el)=>el.status==='sale')
                             .map((el)=>(
                                 <Card el={el}/>
                             ))
                             :
-                            product.filter((el)=>el.status==='sale')
+                            data.filter((el)=>el.status==='sale')
                                 .slice(0,4)
                                 .map((el)=>(
                                     <Card el={el}/>
@@ -49,7 +57,7 @@ const Home = () => {
                 </div>
                 <div className='home__cards'>
                     {
-                        product.filter((el)=>el.status==='new')
+                        data.filter((el)=>el.status==='new')
                             .map((el)=>(
                             <Card el={el}/>
                         ))
@@ -61,7 +69,8 @@ const Home = () => {
                 </div>
                 <div className='home__cards'>
                     {
-                        product.map((el)=>(
+                        data.filter((el)=>el.status==='new')
+                            .map((el)=>(
                             <Card el={el}/>
                         ))
                     }
