@@ -3,11 +3,12 @@ import './Catalog.scss'
 
 const Catalog = () => {
     return (
-        <div className='catalog'>
+        <section className='catalog' style={{background: '#FBF8EC'}}>
+            <div className="container">
             <h2>Каталог</h2>
             <div className="catalog__cards">
                 <div className="catalog__card">
-                <img src="./Images/img.png" alt="" />
+                <img width='555px' height='200px' src="./Images/img.png" alt="" />
                 <p className="catalog__p">Молоко, сыр, яйцо</p>
                 </div>
                 <div className="catalog__card">
@@ -43,7 +44,7 @@ const Catalog = () => {
                 <p className="catalog__p">Здоровое питание</p>
                 </div>
                 <div className="catalog__card">
-                <img src="./Images/img (9).png" alt="" />
+                <img width='555px' height='200px'  src="./Images/img (9).png" alt="" />
                 <p className="catalog__p">Зоотовары</p>
                 </div>
                 <div className="catalog__card">
@@ -51,7 +52,7 @@ const Catalog = () => {
                 <p className="catalog__p">Детское питание</p>
                 </div>
                 <div className="catalog__card">
-                <img src="./Images/img (11).png" alt="" />
+                <img width='555px' height='200px'  src="./Images/img (11).png" alt="" />
                 <p className="catalog__p">Мясо, птица, колбаса</p>
                 </div>
                 <div className="catalog__card">
@@ -60,7 +61,8 @@ const Catalog = () => {
                 </div>
 
             </div>
-        </div>
+            </div>
+        </section>
     );
 };
 
