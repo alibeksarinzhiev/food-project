@@ -6,14 +6,12 @@ import Layout from './Layout/Layout';
 import SingleCard from './pages/SingleCardPage/SingleCard';
 import Catalog from './pages/Catalog/Catalog'
 
-
 const App = () => {
 
     return (
         <>
 
             <Routes>
-
                 <Route path='/' element={<Layout/>}>
                     <Route path='' element={<Home/>}/>
                     <Route path='single' element={<SingleCard/>}/>
