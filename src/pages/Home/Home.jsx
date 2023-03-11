@@ -12,6 +12,7 @@ const Home = () => {
     const [product,setProduct] = useState([])
 
 
+
     return (
         <section className='home' style={{background:'#FBF8EC'}}>
             <div className="container">
@@ -28,6 +29,14 @@ const Home = () => {
                     }
                 </div>
             </div>
+
+
+
+
+
+
+
+
 
         </section>
     );
