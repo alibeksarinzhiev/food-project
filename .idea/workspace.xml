@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="" />
+    <list default="true" id="c4191ff2-16b8-4bf9-b14b-5f79090959f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Favourite/Favourite.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Favourite/Favourite.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +34,10 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MmKvF7owcB7QeDBlmwtrXFn5DX" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="2MlxMpsZcBFqwaF2Yef76wZFufD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,6 +63,13 @@
       <option name="presentableId" value="Default" />
       <updated>1678367545135</updated>
       <workItem from="1678367547316" duration="10462000" />
+      <updated>1678355924519</updated>
+      <workItem from="1678355926769" duration="3829000" />
+      <workItem from="1678359819868" duration="1585000" />
+      <workItem from="1678373375521" duration="166000" />
+      <workItem from="1678456858217" duration="19000" />
+      <workItem from="1678524181203" duration="2480000" />
+      <workItem from="1678529342593" duration="2344000" />
     </task>
     <servers />
   </component>
