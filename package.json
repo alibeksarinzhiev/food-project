@@ -17,6 +17,7 @@
     "json-server-auth": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
@@ -26,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "server": "json-server --watch db.json -p8080",
-    "dev": "concurrently \"react-scripts start\" \"json-server --watch db.json -p8080\"",
+    "dev": "concurrently \"react-scripts start --port 3004\" \"json-server --watch db.json -p8080\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -60,7 +60,7 @@ const SingleCard = () => {
                                 .filter(el => el.category == 'Молоко' || 'блины')
                                 .slice(0, 4)
                                 .map((item, idx) => (
-                                    <div className="interestItem">
+                                    <div key={item.id} className="interestItem">
                                         <Link onClick={window.location.reload} to={`/single/${item.id}`}>
                                             <img src={`/${item.image}`} alt="" />
                                         </Link>
@@ -83,7 +83,7 @@ const SingleCard = () => {
                                 .filter(el => el.sale === true)
                                 .slice(0, 4)
                                 .map((item, idx) => (
-                                    <div className="saleItem">
+                                    <div key={item.id} className="saleItem">
                                         <Link onClick={window.location.reload} to={`/single/${item.id}`}>
                                             <img src={`/${item.image}`} alt="" />
                                             <span className='sale'>-50%</span>
