@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Favourite/Favourite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Favourite/Favourite.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Favourite/Favourite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Favourite/Favourite.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +71,7 @@
       <workItem from="1678456858217" duration="19000" />
       <workItem from="1678524181203" duration="2480000" />
       <workItem from="1678529342593" duration="3822000" />
-      <workItem from="1678559504476" duration="17760000" />
+      <workItem from="1678559504476" duration="18137000" />
     </task>
     <servers />
   </component>
