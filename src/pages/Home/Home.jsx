@@ -23,6 +23,7 @@ const Home = () => {
 
 
         const [all,setAll] = useState(false)
+        
 
 
 
@@ -55,26 +56,39 @@ const Home = () => {
                 </div>
                 <div className='home__new'>
                     <h2 className='first'>Новинки</h2>
-                    <p className='all'>Все новинки</p>
+                    <p className='all' onClick={()=>setAll(!all)}>Все новинки</p>
                 </div>
                 <div className='home__cards'>
-                    {
-                        data.filter((el)=>el.status==='new')
+                {
+                        all?   data.filter((el)=>el.status==='new')
                             .map((el)=>(
-                            <Card el={el}/>
-                        ))
+                                <Card el={el}/>
+                            ))
+                            :
+                            data.filter((el)=>el.status==='new')
+                                .slice(0,4)
+                                .map((el)=>(
+                                    <Card el={el}/>
+                                ))
                     }
+                  
                 </div>
                 <div className='home__prev'>
                     <h2 className='first'>Покупали раньше</h2>
-                    <p className='all'>Все покупки</p>
+                    <p className='all' onClick={()=>setAll(!all)}>Все покупки</p>
                 </div>
                 <div className='home__cards'>
-                    {
-                        data.filter((el)=>el.status==='new')
+                {
+                        all?   data.filter((el)=>el.status==='prev')
                             .map((el)=>(
-                            <Card el={el}/>
-                        ))
+                                <Card el={el}/>
+                            ))
+                            :
+                            data.filter((el)=>el.status==='prev')
+                                .slice(0,4)
+                                .map((el)=>(
+                                    <Card el={el}/>
+                                ))
                     }
                 </div>
                 

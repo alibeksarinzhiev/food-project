@@ -27,6 +27,8 @@ const Card = ({el}) => {
                 {el.sale ?
                     <div className='card__sale'>50%</div>
                     : ''}
+                    {/* <img alt='image/fav.png' src='' className='fav'/> */}
+                    <img src={el.fav} alt="" className='fav'/>
 
         </div>
     );

@@ -16,8 +16,12 @@ export const productsSlice = createSlice({
         setAllProducts:(state,action)=>{
             state.data=action.payload
         }
+        
 
     }
+    
+       
+    
 })
 export const {setAllProducts} = productsSlice.actions
 export default productsSlice.reducer

@@ -7,7 +7,6 @@ import App from "./App";
 import {store} from './redux/index'
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>

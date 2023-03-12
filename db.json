@@ -5,111 +5,207 @@
       "id": 1,
       "image":"image/image (18).png",
       "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44.50",
+      "price": "44.50 ₽",
       "sale": true,
       "category": "блины",
       "paymentcard": true,
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "sale"
+      "status": "sale",
+      "fav" : "image/fav.png"
+  
     },
     {
       "id": 2,
       "image":"image/image (19).png",
       "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
-      "price": "44,50",
+      "price": "44,50 ₽",
+      "sale": true,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "sale",
+      "fav" : "image/fav.png"
+    },
+    {
+      "id": 3,
+      "image":"image/img5.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "599,99 ₽",
       "sale": false,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "sale"
-    },
-    {
-      "id": 3,
-      "image":"image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50",
-      "sale": true,
-      "category": "Молоко",
-      "paymentcard": "С картой",
-      "paymentcash": "Наличными",
-      "withoutsale": "50",
-      "status": "new"
+      "status": "new",
+      "fav" : "image/fav.png"
     },
     {
       "id": 4,
       "image":"image/img3.png",
       "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50",
-      "sale": true,
+      "price": "44,50 ₽",
+      "sale": false,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "new"
+      "status": "new",
+      "fav" : "image/fav.png"
 
     },
     {
       "id": 5,
-      "image":"image/image (19).png",
-      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
-      "price": "44,50",
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50 ₽",
       "sale": true,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "sale"
+      "status": "sale",
+      "fav" : "image/fav.png"
     },
     {
       "id": 6,
-      "image":"image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50",
-      "sale": true,
+      "image":"image/img4.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "159,99 ₽",
+      "sale": false,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "new"
+      "status": "new",
+      "fav" : "image/fav.png"
     },
     {
       "id": 7,
-      "image":"image/image (19).png",
+      "image":"image/img4.png",
       "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
-      "price": "44,50",
+      "price": "44,50 ₽",
       "sale": true,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "sale"
+      "status": "sale",
+      "fav" : "image/fav.png"
     },
     {
       "id": 8,
-      "image":"image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50",
-      "sale": true,
+      "image":"image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49,39 ₽",
+      "sale": false,
       "category": "Молоко",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "new"
+      "status": "new",
+      "fav" : "image/fav.png"
     },
     {
       "id": 9,
       "image":"image/image (18).png",
       "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44.50",
+      "price": "44.50 ₽",
       "sale": true,
       "category": "блины",
       "paymentcard": true,
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "sale"
+      "status": "sale",
+      "fav" : "image/fav.png"
+
+    },
+    {
+      "id": 10,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50 ₽",
+      "sale": false,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new",
+      "fav" : "image/fav.png"
+
+    },
+    {
+      "id": 11,
+      "image":"image/img6.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "79,99 ₽",
+      "sale": false,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "prev",
+      "fav" : "image/fav.png"
+
+    },
+    {
+      "id": 12,
+      "image":"image/img4.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "159,99 ₽",
+      "sale": false,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "prev",
+      "fav" : "image/fav.png"
+
+    },
+    {
+      "id": 13,
+      "image":"image/img5.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "599,99 ₽",
+      "sale": false,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "prev",
+      "fav" : "image/fav.png"
+
+    },
+    {
+      "id": 14,
+      "image":"image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49,39 ₽",
+      "sale": false,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "prev",
+      "fav" : "image/fav.png"
+
+    },
+    {
+      "id": 15,
+      "image":"image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44,50 ₽",
+      "sale": false,
+      "category": "Молоко",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "prev",
+      "fav" : "image/fav.png"
+
     }
+
   ]
 
 }
