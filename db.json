@@ -109,6 +109,78 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale"
+    },
+    {
+      "id": 10,
+      "image":"img/dorblu.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "139,99",
+      "sale": false,
+      "category": "MilkProducts",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "140,50",
+      "status": "sale"
+    },
+    {
+      "id": 11,
+      "image":"img/milk.svg",
+      "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
+      "price": "69,99",
+      "sale": true,
+      "category": "MilkProducts",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "168,50",
+      "status": "обычная"
+    },
+    {
+      "id": 12,
+      "image":"img/sgush.svg",
+      "title": "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром... ",
+      "price": "77,99",
+      "sale": true,
+      "category": "MilkProducts",
+      "paymentcard": "с картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "140,50",
+      "status": "обычная"
+    },
+    {
+      "id": 13,
+      "image":"img/butter.svg",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "192,99",
+      "sale": false,
+      "category": "MilkProducts",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "140,50",
+      "status": "sale"
+    },
+    {
+      "id": 14,
+      "image":"img/yoghurt.svg",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "29,99",
+      "sale": false,
+      "category": "MilkProducts",
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "168,50",
+      "status": "обычная"
+    },
+    {
+      "id": 15,
+      "image":"img/youghurtwithBerry.svg",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "29,99",
+      "sale": false,
+      "category": "MilkProducts",
+      "paymentcard": "с картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "140,50",
+      "status": "обычная"
     }
   ]
 
