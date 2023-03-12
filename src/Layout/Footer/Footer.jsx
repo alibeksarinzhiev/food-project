@@ -33,7 +33,6 @@ const Footer = () => {
                             <p>8 800 777 33 33</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </footer>

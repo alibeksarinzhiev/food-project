@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="" />
+    <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/image/Itemout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/Vector1bas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/img-basket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/strokebas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Basket/Basket.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Basket/Basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Basket/Basket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SingleCardPage/MainCard/mainCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleCardPage/MainCard/mainCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SingleCardPage/SingleCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SingleCardPage/SingleCard.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +83,7 @@
       <workItem from="1678456858217" duration="19000" />
       <workItem from="1678524181203" duration="2480000" />
       <workItem from="1678529342593" duration="3822000" />
-      <workItem from="1678559504476" duration="18137000" />
+      <workItem from="1678559504476" duration="18454000" />
     </task>
     <servers />
   </component>
