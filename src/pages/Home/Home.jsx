@@ -10,8 +10,6 @@ import {setAllProducts} from '../../redux/reducer/products'
 
 const Home = () => {
     const {data} = useSelector((state)=>state.products)
-
-
     const dispatch = useDispatch()
 
     useEffect(()=>{
@@ -19,13 +17,7 @@ const Home = () => {
             .then(({data})=>dispatch(setAllProducts(data)))
     },[])
 
-    console.log(data)
-
-
-        const [all,setAll] = useState(false)
-        
-
-
+    const [all,setAll] = useState(false)
 
     return (
         <section className='home' style={{background:'#FBF8EC'}}>

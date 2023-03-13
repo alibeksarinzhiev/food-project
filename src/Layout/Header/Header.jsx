@@ -1,22 +1,29 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
+
 import CatalogModal from '../../Components/catalogModalWindow/CatalogModal';
+
+
 import './Header.scss'
 import './Header-media.scss'
+
 const Header = () => {
 
     const [catalog, setCatalog] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null);
 
+    const {user} = useSelector((state) => state.users)
+
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
-
     const handleClose = () => {
         setAnchorEl(null);
     };
@@ -89,7 +96,7 @@ const Header = () => {
                                 aria-expanded={open ? 'true' : undefined}
                                 onClick={handleClick}
                             >
-                                Алексей
+                                {user == null ? 'singin/regiter' : user.login}
                             </Button>
                             <Menu
                                 id="basic-menu"

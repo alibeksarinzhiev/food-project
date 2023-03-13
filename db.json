@@ -1,14 +1,15 @@
 {
   "users": [
     {
-      "email": "test@gmail.com",
-      "password": "$2a$10$3zgJ6N7x7ToYsbHWkbP.GOxB7arPiJP10F8U/jieZl59PPOMpmHSa",
+      "email": "lol@gmail.com",
+      "password": "$2a$10$hqMygXk7/SD7eW2h/k6cg.boJRJCRYczVMGU4VW.A/r77YQn6hSeK",
+      "login": "lol",
       "id": 1
     },
     {
-      "email": "test1@gmail.com",
-      "password": "$2a$10$MHk/S/9RplYdSAgKMV.MsO22NKl5t7vXAzW29b3A.SJKNv/yTopx6",
-      "login": "test1",
+      "email": "test@gmail.com",
+      "password": "$2a$10$zPEaiXFbT2aYlhcg6cQpb.4VkXOlVYWRoKStQ/xXjZhJibpppKNCe",
+      "login": "asfasf",
       "id": 2
     }
   ],

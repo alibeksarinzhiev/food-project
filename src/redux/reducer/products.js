@@ -9,6 +9,7 @@ const initialState = {
     error: '',
     status: ''
 }
+
 export const productsSlice = createSlice({
     name: 'products',
     initialState,
