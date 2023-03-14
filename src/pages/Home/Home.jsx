@@ -5,12 +5,14 @@ import './Home.scss'
 import banner from './Sliders.png'
 import { useSelector, useDispatch } from 'react-redux'
 import {setAllProducts} from '../../redux/reducer/products'
+import {useNavigate} from 'react-router-dom'
 
 
 
 const Home = () => {
-    const {data} = useSelector((state)=>state.products)
+    const {data,filter} = useSelector((state)=>state.products)
     const dispatch = useDispatch()
+    const navigate =useNavigate()
 
     useEffect(()=>{
         axios("http://localhost:8080/product")
@@ -18,6 +20,10 @@ const Home = () => {
     },[])
 
     const [all,setAll] = useState(false)
+
+    if (filter.name.length!==0){
+        navigate('/search')
+    }
 
     return (
         <section className='home' style={{background:'#FBF8EC'}}>

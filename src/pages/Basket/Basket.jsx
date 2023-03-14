@@ -2,9 +2,17 @@ import { color } from '@mui/system';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Basket.scss';
+import {useDispatch, useSelector} from "react-redux";
+import {addCount,minusCount} from '../../redux/reducer/cart'
+
 
 const Basket = () => {
+    const dispatch = useDispatch()
+
+    const {data} = useSelector(state=>state.cart)
+
     return (
+
         <section className='basket'>
             <div className="container">
 
@@ -27,138 +35,49 @@ const Basket = () => {
                 <div className="basket-products">
                     
                     <div className="basket-pro">
-
-                        <div className="left-basket-product">
-
-                            <div className="left-product">
-
-                                <div className="product-img">
-                                    <img src="./image/img-basket.png" alt="" />
-                                </div>
-
-                                <div className="products-name">
-                                    <h3 >Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
-
-                                    <div className="price-product">
-                                        <h4>44,50 ₽</h4>
-                                        <p >за шт.</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div className="right-product">
-
-                                <div className="add-card">
-                                    <p type='button'>-</p>
-                                    <p>2</p>
-                                    <p type='button'>+</p>
-                                </div>
-
-                                <h3>89,00 ₽</h3>
-                            </div>
-
-                        </div>
-
-                        {/* 2product */}
-                        <div className="top-basket-product">
-
-                            <div className="left-product">
-
-                                <div className="product-img">
-                                    <img src="./image/img-basket.png" alt="" />
-                                </div>
-
-                                <div className="products-name">
-                                    <h3 >Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
-
-                                    <div className="select-price">
-
-                                        <div className='select-price-sale'>
-
-                                        <div className="price-product">
-                                            <h4>44,50 ₽</h4>
-                                            <p>50,50 ₽</p>
-                                            <p >за шт.</p>
+                        {
+                            data.map((el)=>(
+                                <div className='left-basket-product'>
+                                    <div className="left-product">
+                                        <div className="product-img">
+                                            <img src={el.image} alt="" />
                                         </div>
-                                    
-                                          <div className="pay-basket">
-                                            <p>С картой</p>
-                                            <p>Обычная</p>
-                                          </div>
+                                        <div className="left-basket-product">
 
-                                        <div className="discount"> <button>-10%</button> </div>
-                                        </div>  
-                                         </div>
+
+
+                                            <div className="products-name">
+                                                <h3 >{el.title}</h3>
+
+                                                <div className="price-product">
+                                                    <h4>{el.price}</h4>
+                                                    <p >за шт.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div className="right-product">
+
+                                            <div className="add-card">
+                                                <button onClick={()=>dispatch(minusCount(el))} type='button'>-</button>
+                                                <p>{el.count}</p>
+                                                <button onClick={()=>dispatch(addCount(el))} type='button'>+</button>
+                                            </div>
+
+                                            <h3>89,00 ₽</h3>
+                                        </div>
                                 </div>
-                            </div>
-
-                            <div className="right-product">
-
-                                <div className="add-card">
-                                    <p type='button'>-</p>
-                                    <p>2</p>
-                                    <p type='button'>+</p>
                                 </div>
+                            ))
+                        }
 
-                                <div className="sale-price">
-                                    <h3>80,10 ₽</h3>
-                                    <h4>89,00 ₽</h4>
-                                </div>
-                            </div>
-                        </div>
 
-{/* 3product */}
-                        <div className="left-basket-product">
 
-                            <div className="left-product">
-                                <div className="product-img">
-                                    <img src="./image/img-basket.png" alt="" />
-                                </div>
 
-                                <div className="products-name">
-                                    <h3 >Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
 
-                                    <div className="price-product">
-                                        <h4>44,50 ₽</h4>
-                                        <p >за шт.</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div className="right-product">
 
-                                <div className="add-card">
-                                    <p type='button'>-</p>
-                                    <p>2</p>
-                                    <p type='button'>+</p>
-                                </div>
-
-                                <h3>89,00 ₽</h3>
-                            </div>
-                        </div>
-{/* 4product */}
-                        <div className="left-basket-product">
-                            <div className="left-product">
-
-                                <div className="product-img">
-                                    <img className='out-img' src="./image/itemout.png" alt="" />
-                                </div>
-
-                                <div className="products-name">
-                                    <h3 >Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</h3>
-
-                                    <div className="price-product">
-                                        <h4>44,50 ₽</h4>
-                                        <p >за шт.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="right-product">
-                                <p>Нет в наличии</p>
-                            </div>
-                        </div>
 
                     </div>
 

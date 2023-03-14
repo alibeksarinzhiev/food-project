@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -8,6 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import CatalogModal from '../../Components/catalogModalWindow/CatalogModal';
+import {searchProduct} from "../../redux/reducer/products";
 
 
 import './Header.scss'
@@ -19,6 +20,9 @@ const Header = () => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const {user} = useSelector((state) => state.users)
+    const {filter} = useSelector(stata=>stata.products)
+    const dispatch = useDispatch()
+    const {data} =useSelector(state=>state.cart)
 
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -49,7 +53,7 @@ const Header = () => {
                             <button className='catalogBtn'>Каталог</button>
                         </div>
                         <label htmlFor="">
-                            <input type='te' placeholder={'Найти товар'} />
+                            <input onChange={(e)=>dispatch(searchProduct(e.target.value))} type='search'  placeholder={'Найти товар'} />
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 10.5C2.5 6.08172 6.08172 2.5 10.5 2.5C14.9183 2.5 18.5 6.08172 18.5 10.5C18.5 14.9183 14.9183 18.5 10.5 18.5C6.08172 18.5 2.5 14.9183 2.5 10.5ZM10.5 3.5C6.63401 3.5 3.5 6.63401 3.5 10.5C3.5 14.366 6.63401 17.5 10.5 17.5C14.366 17.5 17.5 14.366 17.5 10.5C17.5 6.63401 14.366 3.5 10.5 3.5Z" fill="#414141" />
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4465 15.4464C15.6418 15.2512 15.9583 15.2512 16.1536 15.4464L21.3536 20.6464C21.5489 20.8417 21.5489 21.1583 21.3536 21.3535C21.1583 21.5488 20.8418 21.5488 20.6465 21.3535L15.4465 16.1535C15.2512 15.9583 15.2512 15.6417 15.4465 15.4464Z" fill="#414141" />
@@ -61,10 +65,12 @@ const Header = () => {
                     <div className="header__icons">
                         <ul>
                             <li>
+                                <Link to='/favourite'>
                                 <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2046 2.25644C13.3299 1.13067 14.8564 0.498169 16.4482 0.498169C18.0399 0.498169 19.5664 1.13063 20.6916 2.25636C21.8174 3.38164 22.45 4.90829 22.45 6.49999C22.45 8.09174 21.8175 9.61826 20.6917 10.7435C20.6917 10.7436 20.6917 10.7435 20.6917 10.7435L11.8517 19.5835C11.6565 19.7788 11.3399 19.7788 11.1446 19.5835L2.30461 10.7435C-0.0390375 8.3999 -0.0390373 4.60009 2.30461 2.25644C4.64826 -0.0872086 8.44807 -0.0872087 10.7917 2.25644L11.4982 2.96289L12.2046 2.25644C12.2046 2.25641 12.2046 2.25647 12.2046 2.25644ZM16.4482 1.49817C15.1217 1.49817 13.8496 2.02528 12.9118 2.96346L11.8517 4.02355C11.758 4.11732 11.6308 4.16999 11.4982 4.16999C11.3656 4.16999 11.2384 4.11732 11.1446 4.02355L10.0846 2.96355C8.13149 1.01042 4.96484 1.01042 3.01172 2.96355C1.05859 4.91667 1.05859 8.08332 3.01172 10.0364L11.4982 18.5229L19.9846 10.0364C20.9228 9.09869 21.45 7.82648 21.45 6.49999C21.45 5.17351 20.9229 3.90138 19.9847 2.96363C19.0469 2.02544 17.7747 1.49817 16.4482 1.49817Z" fill="#414141" />
                                 </svg>
                                 Избранное
+                                </Link>
                             </li>
                             <li>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,12 +82,17 @@ const Header = () => {
                                 Заказы
                             </li>
                             <li>
+                                <Link to='/basket'>
+                                    <div className="header__count">
+                                        {data.length}
+                                    </div>
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6 21C6 19.6193 7.11929 18.5 8.5 18.5C9.88071 18.5 11 19.6193 11 21C11 22.3807 9.88071 23.5 8.5 23.5C7.11929 23.5 6 22.3807 6 21ZM8.5 19.5C7.67157 19.5 7 20.1716 7 21C7 21.8284 7.67157 22.5 8.5 22.5C9.32843 22.5 10 21.8284 10 21C10 20.1716 9.32843 19.5 8.5 19.5Z" fill="#414141" />
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18 21C18 19.6193 19.1193 18.5 20.5 18.5C21.8807 18.5 23 19.6193 23 21C23 22.3807 21.8807 23.5 20.5 23.5C19.1193 23.5 18 22.3807 18 21ZM20.5 19.5C19.6716 19.5 19 20.1716 19 21C19 21.8284 19.6716 22.5 20.5 22.5C21.3284 22.5 22 21.8284 22 21C22 20.1716 21.3284 19.5 20.5 19.5Z" fill="#414141" />
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.5C1.22386 0.5 1 0.723858 1 1C1 1.27614 1.22386 1.5 1.5 1.5H5.08051C5.83783 5.79147 6.60333 10.0643 7.24931 14.3709C7.43288 15.5947 8.48416 16.5 9.72165 16.5H19.8597C21.0514 16.5 22.0774 15.6588 22.3111 14.4903L23.7503 7.29417C23.936 6.36599 23.226 5.5 22.2795 5.5H7.66046C7.3575 5.5 7.07797 5.58901 6.84436 5.74093L5.99239 0.913107C5.95023 0.674179 5.74262 0.5 5.5 0.5H1.5ZM7.166 7.07417C7.12065 6.77187 7.35478 6.5 7.66046 6.5H22.2795C22.595 6.5 22.8316 6.78866 22.7698 7.09806L21.3305 14.2942C21.1903 14.9953 20.5747 15.5 19.8597 15.5H9.72165C8.97916 15.5 8.34839 14.9568 8.23825 14.2225L7.166 7.07417Z" fill="#414141" />
                                 </svg>
                                 Корзина
+                                </Link>
                             </li>
                         </ul>
                     </div>

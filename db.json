@@ -205,5 +205,12 @@
       "status": "prev",
       "fav": "image/fav.png"
     }
+  ],
+  "listOfCategory": [
+    {
+      "id": 1,
+      "name": "Молоко, сыр, яйцо",
+      "category": "Молоко, сыр, яйцо"
+    }
   ]
 }
