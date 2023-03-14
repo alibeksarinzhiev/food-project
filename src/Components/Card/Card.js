@@ -27,7 +27,6 @@ const Card = ({el}) => {
                 {el.sale ?
                     <div className='card__sale'>50%</div>
                     : ''}
-
         </div>
     );
 };
