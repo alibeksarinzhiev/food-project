@@ -23,10 +23,8 @@ const Home = () => {
 
 
         const [all,setAll] = useState(false)
+         
         
-
-
-
     return (
         <section className='home' style={{background:'#FBF8EC'}}>
                 <div className='home__banner'>
