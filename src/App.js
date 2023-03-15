@@ -10,6 +10,7 @@ import Favourite from './pages/Favourite/Favourite'
 import SingleCard from './pages/SingleCardPage/SingleCard';
 
 import './App.scss'
+import CatalogSinglePage from './pages/CatalogCard/CatalogSinglePage';
 
 
 const App = () => {
@@ -22,7 +23,7 @@ const App = () => {
                     <Route path='catalog' element={<Catalog/>}/>
                     <Route path='basket' element={<Basket/>}/>
                     <Route path='favourite' element={<Favourite/>}/>
-                    <Route/>
+                    <Route path='catalogSinglePage' element={<CatalogSinglePage/>}/> 
                     <Route/>
                 </Route>
             </Routes>
