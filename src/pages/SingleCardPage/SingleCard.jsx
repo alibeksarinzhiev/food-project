@@ -17,6 +17,7 @@ const SingleCard = () => {
     const [product, setProduct] = useState([])
     const [interest, setInterest] = useState([])
 
+
     const { id } = useParams()
     useEffect(() => {
         const productUrl = `http://localhost:8080/product/${id}`

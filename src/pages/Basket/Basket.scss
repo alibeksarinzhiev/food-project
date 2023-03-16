@@ -4,6 +4,7 @@
 
 .basket-products {
     display: flex;
+    justify-content: space-between;
 }
 .basket-pro {
     column-gap: 50px;
@@ -64,23 +65,15 @@ align-items: center;
 color: #FF6633;
 }
 
-.add-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 40px;
-    background: #70C05B;
-    column-gap: 10px;    
-}
-
 .left-basket-product{
-    display: flex;
-    justify-content: space-between;
     width: 850px;
 height: 72px;
+display: flex;
+justify-content: space-between;
 background: #FFFFFF;
 border-radius: 4px;
+margin:24px 0;
+box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
 }
 
 .left-product{
@@ -88,123 +81,76 @@ border-radius: 4px;
     justify-content: center;
     padding: 4px 5px;
 }
+.products-img{
+    height: 60px;
+border-radius: 4px;
+}
 
-.left-product h3{
+.product-name{
+    display: flex;
+    width: 480px;
     height: 24px;
 font-weight: 400;
 font-size: 16px;
 color: #414141;
+justify-content: space-between;
 }
 
-.left-product h4 {
+.product-price{
+    display: flex;
+    padding: 20px 0;
+    column-gap: 15px;
+}
+
+.products-price {
 font-size: 12px;
 color: #414141;
 }
-.left-product p{
+.products-count{
 font-size: 12px;
 color: #606060;
 }
 
 .right-product{
     display: flex;
-    justify-content: center;
-flex-direction: row;
+padding: 8px 5px;
 align-items: center;
-padding: 8px;
-gap: 8px;
+
 }
 
-.right-product h3{
+.add-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    background: #70C05B;
+    column-gap: 10px;  
+    margin-left: 60px; 
+}
+
+.prices{
     height: 27px;
-    width: 87px;
+    width: 70px;
 font-size: 15px;
 text-align: right;
 color: #414141;
+margin-left: 25px;
+align-items: center;
 }
 
-.right-basket-toggle {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.right-basket{
+// скидочная карта
+.right-card-basket{
     display: flex;
     justify-content: space-between;
     column-gap: 50px;
     padding: 15px;
 }
 
-.top-basket-product{
+.right-basket-toggle {
     display: flex;
-    justify-content: space-between;
-    width: 850px;
-height: 90px;
-background: #FFFFFF;
-border-radius: 4px;
-margin-top: 24px;
-margin-bottom: 24px;
-}
-.select-product{
-    display: flex;
-}
-
-.price-product{
-    display: flex;
+    align-items: center;
     column-gap: 15px;
-}
-
-.pay-basket{
-    display: flex;
-    font-size: 12px;
-    color: #BFBFBF;
-    column-gap: 15px;
-}
-
-.discount button{
-padding: 4px 8px;
-background: #FF6633;
-border-radius: 4px;
-border: none;
-color: #FFFFFF;
-}
-
-.right-product h4{
-    text-align: right;
-text-decoration-line: line-through;
-color: #8F8F8F;
-font-size: 12px;
-display: block;
-}
-
-.right-product p{
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: #414141;
-}
-
-.sale-price{
-    display: flex;
-    justify-content:end;
-}
-.right-product .sale-price{
-    display: block;
-}
-
-.left-basket-product{
-    display: flex;
-    justify-content: space-between;
-    width: 850px;
-height: 72px;
-background: #FFFFFF;
-border-radius: 4px;
-border: 1px solid #BFBFBF none;
-box-shadow: 1px 2px 4px 0px #0000001A;
-margin:24px 0;
-// background: url(img-basket.png), #FFFFFF;
-box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
-// color:rgba(255, 255, 255, 1)
 }
 
 /* Genel stil */
@@ -283,32 +229,37 @@ box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
     transform: translateX(16px);
   }
 
-  
-  .right-basket{
+  .right-card-basket{
     display:grid;
     justify-content: space-around;
 }
-.right-basket p{
-    color: #8F8F8F;
+.sum-totals{
+    color: #414141
 }
 
-.top-basket{
+.discount-basket{
 display: flex;
 justify-content: space-between;
-
 }
 
-.up-basket {
+.total-card{
+    color: #8F8F8F;
+}
+.card-discount{
+    color: #FF6633;    
+}
+
+.count-basket {
     display: flex;
     justify-content: space-between;
  padding: 10px 0;
 }
-.result-basket{
+.total-basket{
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
 }
-.bonus{
+.card-bonus{
     color: #70C05B !important;
 text-align: center;
 display: flex;
@@ -322,13 +273,13 @@ top:8px;
     height: 2px;
     margin: 28px 0;
 }
-.bonus img{
+.card-bonus img{
     height: 10px;
     width: 24px;
    display: flex;
 }
 
- .min {
+ .min-order {
 height: 24px;
 background: #D80000 ;
 border-radius: 4px;
@@ -338,17 +289,12 @@ border: none;
 margin: 27px 0 20px;
 }
 
-.order{
+.place-order{
+    text-align: center;
     font-size: 24px;
     line-height: 150%;
-    display: flex;
-    align-items: center;    
     color: #FF6633;
-    justify-content: center;
     padding:  20px 16px;
-    gap: 8px;
-    width: 272px;
-    height: 60px;
     background: #FCD5BA;
     border-radius: 4px;
     border: none;
