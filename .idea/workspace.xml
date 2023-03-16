@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Card/Card.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer/favourite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Card/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Basket/Basket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Basket/Basket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Favourite/Favourite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Favourite/Favourite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/products.js" afterDir="false" />
+>>>>>>> 01907a4c4ef8a9655352011049ef8eca30b2e627
+>>>>>>> 1b00cf9a69fbeab46c026fea3debc85bb0c5bf63
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +92,18 @@
       <workItem from="1678456858217" duration="19000" />
       <workItem from="1678524181203" duration="2480000" />
       <workItem from="1678529342593" duration="3822000" />
+<<<<<<< HEAD
+      <workItem from="1678559504476" duration="20604000" />
+=======
       <workItem from="1678559504476" duration="18454000" />
+<<<<<<< HEAD
       <workItem from="1678787224408" duration="6867000" />
       <workItem from="1678886393100" duration="892000" />
       <workItem from="1678888502341" duration="1041000" />
+=======
+      <workItem from="1678787224408" duration="5485000" />
+>>>>>>> 01907a4c4ef8a9655352011049ef8eca30b2e627
+>>>>>>> 1b00cf9a69fbeab46c026fea3debc85bb0c5bf63
     </task>
     <servers />
   </component>

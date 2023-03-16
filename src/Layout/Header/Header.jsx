@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -18,6 +18,7 @@ const Header = () => {
 
     const [catalog, setCatalog] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null);
+    const [count,SetCount] = useState(0)
 
     const {user} = useSelector((state) => state.users)
     const {filter} = useSelector(stata=>stata.products)
@@ -32,6 +33,14 @@ const Header = () => {
         setAnchorEl(null);
     };
 
+    // console.log(data.reduce((acc,el,idx)=>{
+    //     return (
+    //         acc+el.count + data.length
+    //     )
+    // },0))
+    useEffect(()=>{
+        SetCount(data.reduce((acc,el)=> acc+ el.count,0))
+    },[data])
     return (
         <header className='header'>
             <div className="container">
@@ -84,7 +93,7 @@ const Header = () => {
                             <li>
                                 <Link to='/basket'>
                                     <div className="header__count">
-                                        {data.length}
+                                        <p>{count >9 ? '9+' : count}</p>
                                     </div>
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6 21C6 19.6193 7.11929 18.5 8.5 18.5C9.88071 18.5 11 19.6193 11 21C11 22.3807 9.88071 23.5 8.5 23.5C7.11929 23.5 6 22.3807 6 21ZM8.5 19.5C7.67157 19.5 7 20.1716 7 21C7 21.8284 7.67157 22.5 8.5 22.5C9.32843 22.5 10 21.8284 10 21C10 20.1716 9.32843 19.5 8.5 19.5Z" fill="#414141" />

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './Card.scss'
 import {useDispatch, useSelector} from "react-redux";
 import {setProduct} from '../../redux/reducer/cart'
+import {addFavorite} from '../../redux/reducer/favourite' 
+
 
 const Card = ({el}) => {
 
@@ -35,7 +37,7 @@ const Card = ({el}) => {
                     <div className='card__sale'>50%</div>
                     : ''}
                     {/* <img alt='image/fav.png' src='' className='fav'/> */}
-                    <img src={el.fav} alt="" className='fav'/>
+                    <img onClick={dispatch(addFavorite(el))} src={el.fav}  alt="" className='fav'/>
 
         </div>
     );
