@@ -10,6 +10,9 @@ import Favourite from './pages/Favourite/Favourite'
 import SingleCard from './pages/SingleCardPage/SingleCard';
 
 import './App.scss'
+import RegisterPage from './pages/Register/RegisterPage';
+import LoginPage from './pages/Login/LoginPage';
+import Search from './pages/Search/Search'
 
 
 const App = () => {
@@ -22,6 +25,9 @@ const App = () => {
                     <Route path='catalog' element={<Catalog/>}/>
                     <Route path='basket' element={<Basket/>}/>
                     <Route path='favourite' element={<Favourite/>}/>
+                    <Route path='register' element={<RegisterPage/>}/>
+                    <Route path='login' element={<LoginPage/>}/>
+                    <Route path='search' element={<Search/>}/>
                     <Route/>
                     <Route/>
                 </Route>

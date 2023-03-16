@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Card.scss'
+import {useDispatch, useSelector} from "react-redux";
+import {setProduct} from '../../redux/reducer/cart'
 
 const Card = ({el}) => {
+
+
+    const dispatch = useDispatch()
+
+    const {data} = useSelector(state=>state.cart)
     return (
         <div className='card'>
             <Link to={`/single/${el.id}`}>
@@ -21,12 +28,15 @@ const Card = ({el}) => {
                 </p>
             </div>
             <p className='card__text'>{el.title}</p>
-            <button>В корзину</button>
+            <button onClick={()=>dispatch(setProduct(el))}>В корзину</button>
 
 
                 {el.sale ?
                     <div className='card__sale'>50%</div>
                     : ''}
+                    {/* <img alt='image/fav.png' src='' className='fav'/> */}
+                    <img src={el.fav} alt="" className='fav'/>
+
         </div>
     );
 };
