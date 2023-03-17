@@ -13,15 +13,17 @@ import {searchProduct} from "../../redux/reducer/products";
 
 import './Header.scss'
 import './Header-media.scss'
+import { logOut } from '../../redux/reducer/userSlice';
+import RegisterPage from '../../pages/Register/RegisterPage';
 
 const Header = () => {
 
     const [catalog, setCatalog] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null);
     const [count,SetCount] = useState(0)
+    const [openModal, setOpenModal] = useState(false);
 
     const {user} = useSelector((state) => state.users)
-    const {filter} = useSelector(stata=>stata.products)
     const dispatch = useDispatch()
     const {data} =useSelector(state=>state.cart)
 
@@ -43,6 +45,7 @@ const Header = () => {
     },[data])
     return (
         <header className='header'>
+            <RegisterPage setOpenModal={setOpenModal} opneModal={openModal} />
             <div className="container">
                 <div className="header__menu">
                     <div className="header__logo">
@@ -127,11 +130,11 @@ const Header = () => {
                                     'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <MenuItem onClick={handleClose}><Link to="/register">Register</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Button onClick={() => setOpenModal(true)}>Register</Button></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/login">Login</Link></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/vacancy">Вакансии</Link></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/contacts">Контакты</Link></MenuItem>
-                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                                <MenuItem onClick={() => dispatch(logOut())}>Logout</MenuItem>
                             </Menu>
 
                         </div>
@@ -150,7 +153,6 @@ const Header = () => {
         </header>
     );
 };
-
 
 
 

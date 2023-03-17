@@ -17,6 +17,24 @@
       "password": "$2a$10$y/lOyk.UX7tYYs0FsfVLf.1c/JSDeHtVP18Yu/6VpfC6.ro6T/Ufy",
       "login": "alibek",
       "id": 3
+    },
+    {
+      "email": "test123@gmail.com",
+      "password": "$2a$10$PSryJ9oPWNK/5KK.785DjuCrYs3yP8a0DQKxQ3ia32ZbDQp0Rh1ku",
+      "login": "KHA",
+      "id": 4
+    },
+    {
+      "email": "test12345@gmail.com",
+      "password": "$2a$10$KrqONpAcBqGHFLt8ZZQRLety1RPDsUSEtNmks/m4/BNhk4PZ0/Ksi",
+      "login": "KHAA",
+      "id": 5
+    },
+    {
+      "email": "test12345456@mail.ru",
+      "password": "$2a$10$Yw6mzsERunSB6xv8O3mgGuTD2QLSkGz4.IhtYTJFF0W6Sc.mbgBza",
+      "login": "dawdwa",
+      "id": 6
     }
   ],
   "product": [
