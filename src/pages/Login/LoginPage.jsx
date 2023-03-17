@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import './LoginPage.scss'
-import TextField from '@mui/material/TextField';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginSuccess } from '../../redux/reducer/userSlice';
+
+import TextField from '@mui/material/TextField';
+
+import './LoginPage.scss'
 
 const LoginPage = () => {
-
+    const dispatch = useDispatch()
     const [email, setEmail] = useState("")
     const [user, setUser] = useState("")
     const [password, setPassword] = useState("")
+
 
     const postUser = (e) => {
         e.preventDefault()
@@ -17,13 +22,14 @@ const LoginPage = () => {
             password
         }
 
-        axios.post('http://localhost:8080/login', user)
-            .then(res => {
+        axios
+            .post('http://localhost:8080/login', user)
+            .then(({data}) => {
                 setEmail("")
                 setPassword("")
-                setUser(res.data.user)
+                setUser(data.user)
+                dispatch(loginSuccess(data.user))
             })
-
     }
 
 

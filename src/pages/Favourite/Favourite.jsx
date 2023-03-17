@@ -9,7 +9,7 @@ import axios from "axios";
 const Favourite = () => {
     const [MilkProducts,setMilkProducts] = useState([])
     useEffect(()=>{
-        axios.get(' http://localhost:8080/product')
+        axios.get('http://localhost:8080/product')
             .then(({data})=>setMilkProducts(data))
     },[])
     console.log(MilkProducts)

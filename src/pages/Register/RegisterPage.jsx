@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './RegisterPage.scss'
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const RegisterPage = () => {
 
@@ -18,7 +19,8 @@ const RegisterPage = () => {
             password
         }
 
-        axios.post('http://localhost:8080/users', user)
+        axios
+            .post('http://localhost:8080/users', user) 
             .then(res => {
                 setEmail("")
                 setLogin("")
