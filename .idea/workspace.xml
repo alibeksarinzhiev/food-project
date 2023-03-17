@@ -4,6 +4,9 @@
     <list default="true" id="bf5d1673-0ce3-4aef-a4eb-73293fea7294" name="Changes" comment="">
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Card/Card.js" afterDir="false" />
 =======
       <change afterPath="$PROJECT_DIR$/src/pages/Search/Search.jsx" afterDir="false" />
@@ -21,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducer/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/products.js" afterDir="false" />
 >>>>>>> 01907a4c4ef8a9655352011049ef8eca30b2e627
+>>>>>>> 1b00cf9a69fbeab46c026fea3debc85bb0c5bf63
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +96,14 @@
       <workItem from="1678559504476" duration="20604000" />
 =======
       <workItem from="1678559504476" duration="18454000" />
+<<<<<<< HEAD
+      <workItem from="1678787224408" duration="6867000" />
+      <workItem from="1678886393100" duration="892000" />
+      <workItem from="1678888502341" duration="1041000" />
+=======
       <workItem from="1678787224408" duration="5485000" />
 >>>>>>> 01907a4c4ef8a9655352011049ef8eca30b2e627
+>>>>>>> 1b00cf9a69fbeab46c026fea3debc85bb0c5bf63
     </task>
     <servers />
   </component>

@@ -9,12 +9,12 @@ import Catalog from './pages/Catalog/Catalog';
 import LoginPage from './pages/Login/LoginPage';
 import Favourite from './pages/Favourite/Favourite';
 import RegisterPage from './pages/Register/RegisterPage';
+import VacancyPage from './pages/VacancyPage/VacancyPage';
 import SingleCard from './pages/SingleCardPage/SingleCard';
+import ContactsPage from './pages/ContactsPage/ContactsPage';
 import CatalogSinglePage from './pages/CatalogCard/CatalogSinglePage';
 
 import './App.scss'
-import VacancyPage from './pages/VacancyPage/VacancyPage';
-import ContactsPage from './pages/ContactsPage/ContactsPage';
 
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
                     <Route path='single/:id' element={<SingleCard/>}/>
                     <Route path='register' element={<RegisterPage/>}/>
                     <Route path='contacts' element={<ContactsPage/>}/>
+                    <Route path='favourite' element={<Favourite/>}/>
                     <Route path='catalogSinglePage' element={<CatalogSinglePage/>}/>
                 </Route>
             </Routes>

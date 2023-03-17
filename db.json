@@ -11,6 +11,12 @@
       "password": "$2a$10$zPEaiXFbT2aYlhcg6cQpb.4VkXOlVYWRoKStQ/xXjZhJibpppKNCe",
       "login": "asfasf",
       "id": 2
+    },
+    {
+      "email": "alibek@mail.ru",
+      "password": "$2a$10$y/lOyk.UX7tYYs0FsfVLf.1c/JSDeHtVP18Yu/6VpfC6.ro6T/Ufy",
+      "login": "alibek",
+      "id": 3
     }
   ],
   "product": [
@@ -167,7 +173,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "milk"
     },
     {
       "id": 14,
@@ -210,8 +217,26 @@
     {
       "id": 1,
       "name": "Молоко, сыр, яйцо",
-      "category": "Молоко, сыр, яйцо"
+      "category": "Milk",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "name": "Хлеб",
+      "category": "Bread",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Фрукты и овощи",
+      "category": "fruits",
+      "img": ""
+    },
+    {
+      "id": 4,
+      "name": "Замороженные продукты",
+      "category": "Frozen food",
+      "img": ""
     }
   ]
-
 }
