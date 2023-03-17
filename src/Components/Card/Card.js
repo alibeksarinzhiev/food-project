@@ -30,14 +30,16 @@ const Card = ({el}) => {
                 </p>
             </div>
             <p className='card__text'>{el.title}</p>
-            <button onClick={()=>dispatch(setProduct(el))}>В корзину</button>
+
+            <button className={`${data.findIndex((item)=>item.id === el.id) > -1? 'btnadded':'btnadd'}`} onClick={()=>dispatch(setProduct(el))}>В корзину</button>
 
 
                 {el.sale ?
                     <div className='card__sale'>50%</div>
                     : ''}
                     {/* <img alt='image/fav.png' src='' className='fav'/> */}
-                    <img onClick={dispatch(addFavorite(el))} src={el.fav}  alt="" className='fav'/>
+                    <img onClick={()=>dispatch(addFavorite(el))} src={el.fav}  alt="" className='fav'/>
+
 
         </div>
     );

@@ -27,6 +27,7 @@ const cartSlice = createSlice({
                 return el
             })
         },
+
         addCount: (state, action) => {
             state.data = state.data.map((el) => {
                 if (el.id === action.payload.id) {

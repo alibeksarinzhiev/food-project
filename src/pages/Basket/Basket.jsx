@@ -45,6 +45,7 @@ const Basket = () => {
                                         className='checked'
                                         {...label}
                                         defaultChecked
+                                        checked={el.checked}
                                         onClick={() => dispatch(changeCheck(el.id))}
                                         sx={{
                                             color: pink[800],
