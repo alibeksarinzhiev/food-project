@@ -23,7 +23,20 @@
       text-transform: uppercase;
     }
   }
+.header__icons a {
+  display:flex;
+  flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+    row-gap: 10px;
 
+
+}
+ svg .header__count {
+  display: flex;
+  column-gap: 10px;
+  text-align: center;
+}
   &__icons {
     ul {
       display: flex;

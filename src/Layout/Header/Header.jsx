@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -13,14 +13,17 @@ import {searchProduct} from "../../redux/reducer/products";
 
 import './Header.scss'
 import './Header-media.scss'
+import { logOut } from '../../redux/reducer/userSlice';
+import RegisterPage from '../../pages/Register/RegisterPage';
 
 const Header = () => {
 
     const [catalog, setCatalog] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null);
+    const [count,SetCount] = useState(0)
+    const [openModal, setOpenModal] = useState(false);
 
     const {user} = useSelector((state) => state.users)
-    const {filter} = useSelector(stata=>stata.products)
     const dispatch = useDispatch()
     const {data} =useSelector(state=>state.cart)
 
@@ -32,8 +35,17 @@ const Header = () => {
         setAnchorEl(null);
     };
 
+    // console.log(data.reduce((acc,el,idx)=>{
+    //     return (
+    //         acc+el.count + data.length
+    //     )
+    // },0))
+    useEffect(()=>{
+        SetCount(data.reduce((acc,el)=> acc+ el.count,0))
+    },[data])
     return (
         <header className='header'>
+            <RegisterPage setOpenModal={setOpenModal} opneModal={openModal} />
             <div className="container">
                 <div className="header__menu">
                     <div className="header__logo">
@@ -84,7 +96,7 @@ const Header = () => {
                             <li>
                                 <Link to='/basket'>
                                     <div className="header__count">
-                                        {data.length}
+                                        <p>{count >9 ? '9+' : count}</p>
                                     </div>
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6 21C6 19.6193 7.11929 18.5 8.5 18.5C9.88071 18.5 11 19.6193 11 21C11 22.3807 9.88071 23.5 8.5 23.5C7.11929 23.5 6 22.3807 6 21ZM8.5 19.5C7.67157 19.5 7 20.1716 7 21C7 21.8284 7.67157 22.5 8.5 22.5C9.32843 22.5 10 21.8284 10 21C10 20.1716 9.32843 19.5 8.5 19.5Z" fill="#414141" />
@@ -118,9 +130,11 @@ const Header = () => {
                                     'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <MenuItem onClick={handleClose}><Link to="/register">Register</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Button onClick={() => setOpenModal(true)}>Register</Button></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/login">Login</Link></MenuItem>
-                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/vacancy">Вакансии</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/contacts">Контакты</Link></MenuItem>
+                                <MenuItem onClick={() => dispatch(logOut())}>Logout</MenuItem>
                             </Menu>
 
                         </div>
@@ -139,7 +153,6 @@ const Header = () => {
         </header>
     );
 };
-
 
 
 
