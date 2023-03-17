@@ -12,8 +12,9 @@ const Card = ({el}) => {
     const dispatch = useDispatch()
 
     const {data} = useSelector(state=>state.cart)
+    
     return (
-        <div className='card'>
+        <div key={el.id} className='card'>
             <Link to={`/single/${el.id}`}>
                 <img src={el.image} alt=""/>
             </Link>
@@ -37,7 +38,7 @@ const Card = ({el}) => {
                     <div className='card__sale'>50%</div>
                     : ''}
                     {/* <img alt='image/fav.png' src='' className='fav'/> */}
-                    <img onClick={dispatch(addFavorite(el))} src={el.fav}  alt="" className='fav'/>
+                    <img onClick={() => dispatch(addFavorite(el))} src={el.fav}  alt="" className='fav'/>
 
         </div>
     );

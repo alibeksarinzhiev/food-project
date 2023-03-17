@@ -1,19 +1,23 @@
-import { color } from '@mui/system';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Basket.scss';
-import { useDispatch, useSelector } from "react-redux";
-import { addCount, minusCount, removeProduct, changeCheck } from '../../redux/reducer/cart'
-import Checkbox from '@mui/material/Checkbox';
-import { pink } from '@mui/material/colors';
+import { useState } from 'react';
 
+import { green } from '@mui/material/colors';
+import Checkbox from '@mui/material/Checkbox';
+
+import { useDispatch, useSelector } from "react-redux";
+import { addCount, minusCount, removeProduct, changeCheck,changeAllChecked } from '../../redux/reducer/cart';
+
+import './Basket.scss';
 
 const Basket = () => {
     const dispatch = useDispatch()
-    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
-    const { data } = useSelector(state => state.cart)
 
-    console.log(data);
+    const { data } = useSelector(state => state.cart)
+    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
+    const [status , setStatus] = useState(false)
+    
     return (
 
         <section className='basket'>
@@ -30,12 +34,12 @@ const Basket = () => {
                 </div>
 
                 <div className="buttons-opt">
-                    <button>-</button>
-                    <p1>Выделить всё</p1>
-                    <p2 onClick={() => dispatch(removeProduct(true))}>Удалить выбранные</p2>
+                    <button onClick={() => dispatch(changeAllChecked())&& setStatus(!status)}>{status ? '-' : '+'}</button>
+                    <p onClick={() => dispatch(changeAllChecked())&& setStatus(!status)}>Выделить всё</p>
+                    <p style={{color:'red'}} onClick={() => dispatch(removeProduct(true))}>Удалить выбранные</p>
                 </div>
 
-                <div className="basket-products">
+                <div className="basket-products"> 
 
                     <div className="basket-pro">
                         {
@@ -45,11 +49,12 @@ const Basket = () => {
                                         className='checked'
                                         {...label}
                                         defaultChecked
+                                        checked={el.checked}
                                         onClick={() => dispatch(changeCheck(el.id))}
                                         sx={{
-                                            color: pink[800],
+                                            color: green[800],
                                             '&.Mui-checked': {
-                                                color: pink[600],
+                                                color: green[600],
                                             },
                                         }}
                                     />
@@ -84,9 +89,9 @@ const Basket = () => {
 
                     <div className="right-card-basket">
                         <div className="right-basket-toggle">
-                            <div class="toggle-switch">
-                                <input class="toggle-input" id="toggle" type="checkbox" />
-                                <label class="toggle-label" for="toggle"></label>
+                            <div className="toggle-switch">
+                                <input className="toggle-input" id="toggle" type="checkbox" />
+                                <label className="toggle-label" htmlFor="toggle"></label>
                             </div>
                             <h4 className='sum-totals'>Списать 200 ₽ </h4>
                         </div>

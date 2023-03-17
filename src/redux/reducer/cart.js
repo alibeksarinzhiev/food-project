@@ -27,6 +27,11 @@ const cartSlice = createSlice({
                 return el
             })
         },
+        changeAllChecked:(state , action) =>{
+            state.data = state.data.map(el =>{
+                return {...el,checked: el.checked = !el.checked}
+            })
+        },
         addCount: (state, action) => {
             state.data = state.data.map((el) => {
                 if (el.id === action.payload.id) {
@@ -46,5 +51,5 @@ const cartSlice = createSlice({
 
     }
 })
-export const { setProduct, addCount, minusCount, removeProduct, changeCheck } = cartSlice.actions
+export const { setProduct, addCount, minusCount, removeProduct, changeCheck , changeAllChecked } = cartSlice.actions
 export default cartSlice.reducer

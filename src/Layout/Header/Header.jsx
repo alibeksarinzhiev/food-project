@@ -129,6 +129,8 @@ const Header = () => {
                             >
                                 <MenuItem onClick={handleClose}><Link to="/register">Register</Link></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/login">Login</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/vacancy">Вакансии</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/contacts">Контакты</Link></MenuItem>
                                 <MenuItem onClick={handleClose}>Logout</MenuItem>
                             </Menu>
 

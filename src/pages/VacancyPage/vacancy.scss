@@ -1,0 +1,59 @@
+.vacancy__page {
+    padding: 100px 0 60px;
+    background-color: #FBF8EC;
+
+    .section__title {
+
+        .navPanel {
+            display: flex;
+            font-size: 12px;
+            column-gap: 25px;
+            font-weight: 400;
+            align-items: center;
+
+            svg {
+                font-size: 18px;
+            }
+
+            .greyName {
+                color: #8F8F8F;
+            }
+        }
+
+        .sectionName {
+            padding: 25px 0 40px;
+        }
+    }
+
+    .itemWrapper {
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .item {
+            padding: 25px;
+            display: flex;
+            row-gap: 16px;
+            flex-direction: column;
+            background-color: white;
+
+            &__title {
+                font-size: 24px;
+                color: #414141;
+                font-weight: 700;
+            }
+
+            article {
+                .disName {
+                    margin-bottom: 8px;
+                }
+
+                .phoneNumber {
+                    display: flex;
+                    column-gap: 5px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
