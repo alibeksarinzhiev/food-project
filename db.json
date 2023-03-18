@@ -41,8 +41,8 @@
     {
       "id": 1,
       "image": "image/image (18).png",
-      "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44.50",
+      "title": "блины",
+      "price": "150",
       "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -77,8 +77,8 @@
     {
       "id": 4,
       "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44.50",
+      "title": "qwretyyyyi",
+      "price": "20",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
