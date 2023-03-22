@@ -35,6 +35,12 @@
       "password": "$2a$10$Yw6mzsERunSB6xv8O3mgGuTD2QLSkGz4.IhtYTJFF0W6Sc.mbgBza",
       "login": "dawdwa",
       "id": 6
+    },
+    {
+      "email": "teasty13@mail.ru",
+      "password": "$2a$10$T.d2p1/0qWlSmG3VtfgY8O0HNpstFSt9JftfR7.Cw/Jqu5ah5H1pi",
+      "login": "teasty13",
+      "id": 7
     }
   ],
   "product": [

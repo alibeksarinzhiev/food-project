@@ -74,12 +74,12 @@ const Basket = () => {
                                         <div className="right-product">
 
                                             <div className="add-card">
-                                                <button onClick={() => dispatch(minusCount(el))} type='button'>-</button>
+                                                <button className='pluse-add-card' onClick={() => dispatch(minusCount(el))} type='button'>-</button>
                                                 <p>{el.count}</p>
-                                                <button onClick={() => dispatch(addCount(el))} type='button'>+</button>
+                                                <button className='minus-add-card' onClick={() => dispatch(addCount(el))} type='button'>+</button>
                                             </div>
 
-                                            <h3 className='prices'>89,00 ₽</h3>
+                                            <h3 className='price-product-basket'>89,00 ₽</h3>
                                         </div>
                                     </div>
                                 </div>
