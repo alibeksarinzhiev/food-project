@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 import {setProduct} from '../../redux/reducer/cart'
-import {addFavorite} from '../../redux/reducer/favourite' 
+import {addFavorite} from '../../redux/reducer/favourite'
+import {AiOutlineHeart} from 'react-icons/ai'
 
 import './Card.scss'
 
@@ -12,6 +13,11 @@ const Card = ({el}) => {
     const dispatch = useDispatch()
 
     const {data} = useSelector(state=>state.cart)
+
+    const fav = useSelector(state=>state.favourite)
+
+
+
     
     return (
         <div key={el.id} className='card'>
@@ -37,7 +43,13 @@ const Card = ({el}) => {
                 el.sale ? <div className='card__sale'> 50% </div>: ''
                 }
                     {/* <img alt='image/fav.png' src='' className='fav'/> */}
-                    <img onClick={() => dispatch(addFavorite(el))} src={el.fav}  alt="" className='fav'/>
+
+
+
+            <span className={`${fav.data.findIndex((item)=>item.id===el.id)>-1
+            ?'card__checked' : 'card__heart'}`} onClick={()=>dispatch(addFavorite(el))}>
+                <AiOutlineHeart/>
+            </span>
         </div>
     );
 };
