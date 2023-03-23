@@ -1,17 +1,16 @@
 {
-  "users": [
-  ],
+  "users": [],
   "product": [
     {
       "id": 1,
       "image": "image/image (18).png",
       "title": "блины2",
       "price": "70",
-      "sale": true,
+      "sale": "false",
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
-      "withoutsale": "50",
-      "status": "sale",
+      "withoutsale": "200",
+      "status": "new",
       "fav": "image/fav.png"
     },
     {
@@ -208,6 +207,11 @@
       "price": "100",
       "image": "https://globus-online.kg/upload/iblock/372/372bd4ce6492c2c36bd66ceb47ea6510.png",
       "id": 19
+    },
+    {
+      "price": "190",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Vj2BmFdKGZ0CihJ2G5P7rLxUkwgizO96oQ&usqp=CAU",
+      "id": 20
     }
   ],
   "listOfCategory": [

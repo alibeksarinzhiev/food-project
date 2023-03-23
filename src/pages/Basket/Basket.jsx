@@ -26,6 +26,9 @@ const Basket = () => {
     useEffect(() => {
         setPrice(data.reduce((acc , prev) => acc + +prev.price,0))
     },[])
+
+
+
     return (
 
         <section className='basket'>
@@ -95,42 +98,55 @@ const Basket = () => {
                         }
                     </div>
 
-                    <div className="right-card-basket">
-                        <div className="right-basket-toggle">
-                            <div className="toggle-switch">
-                                <input className="toggle-input" id="toggle" type="checkbox" />
-                                <label className="toggle-label" htmlFor="toggle"></label>
+                    {
+                        data.length > 0 ?               <div className="right-card-basket">
+                            <div className="right-basket-toggle">
+                                <div className="toggle-switch">
+                                    <input className="toggle-input" id="toggle" type="checkbox" />
+                                    <label className="toggle-label" htmlFor="toggle"></label>
+                                </div>
+                                <h4 className='sum-totals'>Списать 200 ₽ </h4>
                             </div>
-                            <h4 className='sum-totals'>Списать 200 ₽ </h4>
-                        </div>
-                        <p className='total-card'> На карте накоплено 200 ₽ </p>
+                            <p className='total-card'> На карте накоплено 200 ₽ </p>
 
-                        <div className="line"></div>
+                            <div className="line"></div>
 
-                        <div className="count-basket">
-                            <p className='total-card'>{data.length} товара</p>
-                            <h4 className='sum-totals'>{price} ₽</h4>
-                        </div>
+                            <div className="count-basket">
+                                <p className='total-card'>{data.length} товара</p>
+                                <h4 className='sum-totals'>{price} ₽</h4>
+                            </div>
 
-                        <div className="discount-basket">
-                            <p className='total-card'>Скидка</p>
-                            <h4 className='card-discount'>-8,01  ₽ </h4>
-                        </div>
+                            <div className="discount-basket">
+                                <p className='total-card'>Скидка</p>
+                                <h4 className='card-discount'>-8,01  ₽ </h4>
+                            </div>
 
-                        <div className="line"></div>
+                            <div className="line"></div>
 
-                        <div className="total-basket">
-                            <p className='total-card'>Итог</p>
-                            <h3 className='sum-totals'>250,09 ₽ </h3>
-                        </div>
-                        <div className="card-bonus">
-                            <img src="./image/Vector1bas.png" alt="" />
-                            <p className='bonus' >Вы получаете 100 бонусов</p>
-                        </div>
+                            <div className="total-basket">
+                                <p className='total-card'>Итог</p>
 
-                        <button className='min-order'>Минимальная сумма заказа 1000р</button>
-                        <button className='place-order'>Оформить заказ</button>
-                    </div>
+
+
+                                {data.length>0? <h3 className='sum-totals'>
+                                    {data.reduce((acc,rec)=>(
+                                        acc + +rec.price * +rec.count
+                                    ),0)} ₽
+                                </h3>:''
+                                }
+
+                            </div>
+                            <div className="card-bonus">
+                                <img src="./image/Vector1bas.png" alt="" />
+                                <p className='bonus' >Вы получаете 100 бонусов</p>
+                            </div>
+
+                            <button className='min-order'>Минимальная сумма заказа 1000р</button>
+                            <button className='place-order'>Оформить заказ</button>
+                        </div> : <h2>Корзина пуста</h2>
+                    }
+
+
                 </div>
 
             </div>
