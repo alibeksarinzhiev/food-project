@@ -8,7 +8,7 @@ import './Catalog.scss'
 
 const Catalog = () => {
 
-    // const {data} = useSelector((state)=>state.products)
+  
     // const [product, setProduct] = useState([])
 
 

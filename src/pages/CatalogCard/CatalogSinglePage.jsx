@@ -10,17 +10,17 @@ import './catalogSinglePage.scss'
 const CatalogSinglePage = () => {
 
     const [product, setProduct] = useState([])
+  
 
     // const { id } = useParams()
-    useEffect(() => {
-        const productUrl = `http://localhost:8080/product`
-        
-        axios
-            .get(productUrl)
-            .then(({ data }) => setProduct(data))
+    // useEffect(() => {
+    //     const productUrl = `http://localhost:8080/product/${id}`
+       
+    //     axios
+    //         .get(productUrl)
+    //         .then(({ data }) => setProduct(data))
 
-    }, [])
-
+    // }, [])
     return (
         <section className='catalogSinglePage'>
             <div className="container">
@@ -71,10 +71,12 @@ const CatalogSinglePage = () => {
                             <p>Яйцо</p>
                         </div>
                         <div className="catalog__filter__inStock">
-                            <div className="catalog__filter__inStock__toggle">
-                                <img src={Toggle} alt=""/>
+                        <div class="toggle-switch">
+                            <input class="toggle-input" id="toggle" type="checkbox" />
+                            <label class="toggle-label" for="toggle"></label>
+                        </div>
                                 <p>В наличии</p>
-                            </div>
+                            
                             <button>Применить</button>
                         </div>
 
