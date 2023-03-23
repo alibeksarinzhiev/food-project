@@ -24,14 +24,14 @@
     font-weight: 700;
 }
 
-.button {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    column-gap: 10px;
-}
+// .button {
+//     font-size: 12px;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     color: white;
+//     column-gap: 10px;
+// }
 
 .buttons-opt {
     border: none;
@@ -132,16 +132,34 @@
     background: #70C05B;
     column-gap: 10px;
     margin-left: 60px;
+    border-radius: 4px;
+}
+.pluse-add-card{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    column-gap: 10px;
+}
+.minus-add-card{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    column-gap: 10px;
 }
 
-.prices {
+
+.price-product-basket{
     height: 27px;
     width: 70px;
     font-size: 15px;
     text-align: right;
     color: #414141;
     margin-left: 25px;
-    align-items: center;
+    align-items: center !important;
 }
 
 // скидочная карта
