@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -17,7 +17,15 @@ const Basket = () => {
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
     const [status , setStatus] = useState(false)
+    const [price , setPrice] = useState(0)
+    const [salePrice , setSalePrice] = useState(0)
     
+    useEffect(() =>{
+        setSalePrice(Math.round(Math.floor(price)))
+    },[]) 
+    useEffect(() => {
+        setPrice(data.reduce((acc , prev) => acc + +prev.price,0))
+    },[])
     return (
 
         <section className='basket'>
@@ -67,7 +75,7 @@ const Basket = () => {
                                             <h3 className='product-name' >{el.title}</h3>
 
                                             <div className="product-price">
-                                                <h4 className='products-price'>{el.price}</h4>
+                                                <h4 className='products-price'>{el.price} ₽</h4>
                                                 <p className='products-count' >за шт.</p>
                                             </div>
                                         </div>
@@ -79,7 +87,7 @@ const Basket = () => {
                                                 <button className='minus-add-card' onClick={() => dispatch(addCount(el))} type='button'>+</button>
                                             </div>
 
-                                            <h3 className='price-product-basket'>89,00 ₽</h3>
+                                            <h3 className='price-product-basket'>{el.price * el.count} ₽</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -100,8 +108,8 @@ const Basket = () => {
                         <div className="line"></div>
 
                         <div className="count-basket">
-                            <p className='total-card'>3 товара</p>
-                            <h4 className='sum-totals'>258,10  ₽ </h4>
+                            <p className='total-card'>{data.length} товара</p>
+                            <h4 className='sum-totals'>{price} ₽</h4>
                         </div>
 
                         <div className="discount-basket">
