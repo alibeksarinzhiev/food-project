@@ -7,6 +7,7 @@ import {AiOutlineHeart} from 'react-icons/ai'
 
 import './Card.scss'
 
+
 const Card = ({el}) => {
 
 
