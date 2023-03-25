@@ -57,12 +57,12 @@ const Home = () => {
                 </div>
                 <div className='home__cards'>
                     {
-                        all?   data.filter((el)=>el.status==='sale')
+                        all?   data.filter((el)=>el.sale)
                             .map((el)=>(
                                 <Card el={el}/>
                             ))
                             :
-                            data.filter((el)=>el.status==='sale')
+                            data.filter((el)=>el.sale)
                                 .slice(0,4)
                                 .map((el)=>(
                                     <Card el={el}/>
