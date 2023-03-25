@@ -1,36 +1,11 @@
 {
-  "users": [
-    {
-      "email": "lol@gmail.com",
-      "password": "$2a$10$hqMygXk7/SD7eW2h/k6cg.boJRJCRYczVMGU4VW.A/r77YQn6hSeK",
-      "login": "lol",
-      "id": 1
-    },
-    {
-      "email": "test@gmail.com",
-      "password": "$2a$10$zPEaiXFbT2aYlhcg6cQpb.4VkXOlVYWRoKStQ/xXjZhJibpppKNCe",
-      "login": "asfasf",
-      "id": 2
-    }
-  ],
+  "users": [],
   "product": [
-    {
-      "id": 1,
-      "image": "image/image (18).png",
-      "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44.50 ₽",
-      "sale": true,
-      "paymentcard": "С картой",
-      "paymentcash": "Наличными",
-      "withoutsale": "50",
-      "status": "sale",
-      "fav": "image/fav.png"
-    },
     {
       "id": 2,
       "image": "image/image (19).png",
       "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
-      "price": "44,50 ₽",
+      "price": "44.50",
       "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -42,7 +17,7 @@
       "id": 3,
       "image": "image/img5.png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "599,99 ₽",
+      "price": "599.99",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -51,21 +26,10 @@
       "fav": "image/fav.png"
     },
     {
-      "id": 3,
-      "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44.50",
-      "sale": false,
-      "paymentcard": "С картой",
-      "paymentcash": "Наличными",
-      "withoutsale": "50",
-      "status": "new"
-    },
-    {
       "id": 4,
       "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50 ₽",
+      "title": "qwretyyyyi",
+      "price": "20",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -77,55 +41,43 @@
       "id": 5,
       "image": "image/img3.png",
       "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50 ₽",
-      "sale": true,
-      "paymentcard": "С картой",
-      "paymentcash": "Наличными",
-      "withoutsale": "50",
-      "status": "sale",
-      "fav": "image/fav.png"
-    },
-    {
-      "id": 6,
-      "image": "image/img4.png",
-      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "159,99 ₽",
+      "price": "44.50",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
+      "fav": "image/fav.png"
+    },
+    {
+      "id": 6,
+      "image": "image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44.50",
+      "sale": true,
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "sale",
       "fav": "image/fav.png"
     },
     {
       "id": 7,
       "image": "image/img4.png",
-      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
-      "price": "44,50 ₽",
-      "sale": true,
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "159.99",
+      "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "sale",
+      "status": "new",
       "fav": "image/fav.png"
     },
     {
       "id": 8,
-      "image": "image/image (19).png",
-      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "49,39 ₽",
-      "sale": false,
-      "paymentcard": "С картой",
-      "paymentcash": "Наличными",
-      "withoutsale": "50",
-      "status": "new",
-      "fav": "image/fav.png"
-    },
-    {
-      "id": 9,
-      "image": "image/image (18).png",
-      "title": "Г/Ц Блинчики с мясом вес, Россия",
-      "price": "44.50 ₽",
+      "image": "image/img4.png",
+      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      "price": "44.50",
       "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -134,10 +86,10 @@
       "fav": "image/fav.png"
     },
     {
-      "id": 10,
-      "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50 ₽",
+      "id": 9,
+      "image": "image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -146,22 +98,34 @@
       "fav": "image/fav.png"
     },
     {
+      "id": 10,
+      "image": "image/image (18).png",
+      "title": "Г/Ц Блинчики с мясом вес, Россия",
+      "price": "44.50",
+      "sale": true,
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "sale",
+      "fav": "image/fav.png"
+    },
+    {
       "id": 11,
-      "image": "image/img6.png",
-      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "79,99 ₽",
+      "image": "image/img3.png",
+      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      "price": "44.50",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
-      "status": "prev",
+      "status": "new",
       "fav": "image/fav.png"
     },
     {
       "id": 12,
-      "image": "image/img4.png",
+      "image": "image/img6.png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "159,99 ₽",
+      "price": "79.99",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -171,21 +135,22 @@
     },
     {
       "id": 13,
-      "image": "image/img5.png",
+      "image": "image/img4.png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "599,99 ₽",
+      "price": "159.99",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "milk"
     },
     {
       "id": 14,
-      "image": "image/image (19).png",
+      "image": "image/img5.png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "49,39 ₽",
+      "price": "599.99",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -195,9 +160,21 @@
     },
     {
       "id": 15,
+      "image": "image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": false,
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "prev",
+      "fav": "image/fav.png"
+    },
+    {
+      "id": 16,
       "image": "image/img3.png",
       "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44,50 ₽",
+      "price": "44.50",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -208,30 +185,51 @@
   ],
   "listOfCategory": [
     {
-      "id":1,
+      "id": 1,
       "name": "Молоко, сыр, яйцо",
       "category": "MilkProducts"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Хлеб",
       "category": "Хлеб"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Фрукты и овощи",
       "category": "Фрукты и овощи"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Замороженные продукты",
       "category": "Замороженные продукты"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "Напитки",
       "category": "Напитки"
-}
+    },
+    {
+      "category": "Milk",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "name": "Хлеб",
+      "category": "Bread",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Фрукты и овощи",
+      "category": "fruits",
+      "img": ""
+    },
+    {
+      "id": 4,
+      "name": "Замороженные продукты",
+      "category": "Frozen food",
+      "img": ""
+    }
   ]
-
 }

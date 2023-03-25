@@ -14,8 +14,9 @@
 
   &__logo a {
     display: flex;
-    column-gap: 10px;
+    column-gap: 20px;
     align-items: center;
+    padding: 0 15px;
 
     p {
       color: #414141;
@@ -28,9 +29,13 @@
   flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
-    row-gap: 10px;
+    row-gap: 8px;
+    left:10px;
+}
 
-
+.header__count {
+  display: flex;
+  column-gap: 5px;
 }
  svg .header__count {
   display: flex;
@@ -44,18 +49,19 @@ justify-content: space-evenly;
 
       li {
         display: flex;
-        row-gap: 10px;
+        row-gap: 9px;
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
       }
     }
   }
+  
 
   &__search {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 20px;
     height: 40px;
 
     label {
@@ -67,6 +73,7 @@ justify-content: space-evenly;
       border-radius: 4px;
       padding: 10px;
       width: 350px;
+      column-gap: 15px;
 
       input {
         border: none;
@@ -80,10 +87,11 @@ justify-content: space-evenly;
     }
 
     .catalogBtnBox {
+      width: 30%;
       display: flex;
       align-items: center;
       padding: 0 25px 0 10px;
-      column-gap: 20px;
+      column-gap: 10px;
       height: 100%;
       color: white;
       background-color: #70C05B;

@@ -1,16 +1,31 @@
-import { color } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Basket.scss';
-import {useDispatch, useSelector} from "react-redux";
-import {addCount,minusCount} from '../../redux/reducer/cart'
+import { useState } from 'react';
 
+import { green } from '@mui/material/colors';
+import Checkbox from '@mui/material/Checkbox';
+
+import { useDispatch, useSelector } from "react-redux";
+import { addCount, minusCount, removeProduct, changeCheck,changeAllChecked } from '../../redux/reducer/cart';
+
+import './Basket.scss';
 
 const Basket = () => {
     const dispatch = useDispatch()
 
-    const {data} = useSelector(state=>state.cart)
+    const { data } = useSelector(state => state.cart)
+    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
+    const [status , setStatus] = useState(false)
+    const [price , setPrice] = useState(0)
+    const [salePrice , setSalePrice] = useState(0)
+    
+    useEffect(() =>{
+        setSalePrice(Math.round(Math.floor(price)))
+    },[]) 
+    useEffect(() => {
+        setPrice(data.reduce((acc , prev) => acc + +prev.price,0))
+    },[])
     return (
 
         <section className='basket'>
@@ -27,45 +42,54 @@ const Basket = () => {
                 </div>
 
                 <div className="buttons-opt">
-                    <button>-</button>
-                    <p1>Выделить всё</p1>
-                    <p2>Удалить выбранные</p2>
+                    <button onClick={() => dispatch(changeAllChecked())&& setStatus(!status)}>{status ? '-' : '+'}</button>
+                    <p onClick={() => dispatch(changeAllChecked())&& setStatus(!status)}>Выделить всё</p>
+                    <p style={{color:'red'}} onClick={() => dispatch(removeProduct(true))}>Удалить выбранные</p>
                 </div>
 
-                <div className="basket-products">
-                    
+                <div className="basket-products"> 
+
                     <div className="basket-pro">
                         {
-                            data.map((el)=>(
-                                <div className='left-basket-product'>
+                            data.map((el) => (
+                                <div key={el.id} className='left-basket-product'>
+                                    <Checkbox
+                                        className='checked'
+                                        {...label}
+                                        defaultChecked
+                                        checked={el.checked}
+                                        onClick={() => dispatch(changeCheck(el.id))}
+                                        sx={{
+                                            color: green[800],
+                                            '&.Mui-checked': {
+                                                color: green[600],
+                                            },
+                                        }}
+                                    />
+                                    
                                     <div className="left-product">
                                         <div className="products-img">
-                                            <img  className='products-img' src={el.image} alt="" />
+                                            <img className='products-img' src={el.image} alt="" />
                                         </div>
+                                        <div className="products-name">
+                                            <h3 className='product-name' >{el.title}</h3>
 
-
-
-                                            <div className="products-name">
-                                                <h3 className='product-name' >{el.title}</h3>
-
-                                                <div className="product-price">
-                                                    <h4 className='products-price'>{el.price}</h4>
-                                                    <p className='products-count' >за шт.</p>
-                                                </div>
+                                            <div className="product-price">
+                                                <h4 className='products-price'>{el.price} ₽</h4>
+                                                <p className='products-count' >за шт.</p>
                                             </div>
-
-
+                                        </div>
                                         <div className="right-product">
 
                                             <div className="add-card">
-                                                <button onClick={()=>dispatch(minusCount(el))} type='button'>-</button>
+                                                <button className='pluse-add-card' onClick={() => dispatch(minusCount(el))} type='button'>-</button>
                                                 <p>{el.count}</p>
-                                                <button onClick={()=>dispatch(addCount(el))} type='button'>+</button>
+                                                <button className='minus-add-card' onClick={() => dispatch(addCount(el))} type='button'>+</button>
                                             </div>
 
-                                            <h3 className='prices'>89,00 ₽</h3>
+                                            <h3 className='price-product-basket'>{el.price * el.count} ₽</h3>
                                         </div>
-                                </div>
+                                    </div>
                                 </div>
                             ))
                         }
@@ -73,10 +97,10 @@ const Basket = () => {
 
                     <div className="right-card-basket">
                         <div className="right-basket-toggle">
-                        <div class="toggle-switch">
-                            <input class="toggle-input" id="toggle" type="checkbox" />
-                            <label class="toggle-label" for="toggle"></label>
-                        </div>
+                            <div className="toggle-switch">
+                                <input className="toggle-input" id="toggle" type="checkbox" />
+                                <label className="toggle-label" htmlFor="toggle"></label>
+                            </div>
                             <h4 className='sum-totals'>Списать 200 ₽ </h4>
                         </div>
                         <p className='total-card'> На карте накоплено 200 ₽ </p>
@@ -84,8 +108,8 @@ const Basket = () => {
                         <div className="line"></div>
 
                         <div className="count-basket">
-                            <p className='total-card'>3 товара</p>
-                            <h4 className='sum-totals'>258,10  ₽ </h4>
+                            <p className='total-card'>{data.length} товара</p>
+                            <h4 className='sum-totals'>{price} ₽</h4>
                         </div>
 
                         <div className="discount-basket">

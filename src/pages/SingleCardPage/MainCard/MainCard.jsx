@@ -1,16 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
 
+import {setProduct} from '../../../redux/reducer/cart';
+
 import NotificationsOffOutlinedIcon from '@mui/icons-material/NotificationsOffOutlined';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
+
+import { useDispatch, useSelector } from 'react-redux';
 
 import './mainCard.scss'
 
 const MainCard = ({ product }) => {
-
+    
+    const dispatch = useDispatch()
     const [notify, setNotify] = useState(false)
-
-
+    const {data} = useSelector(state => state.cart)
+    
     return (
         <section className='cardWrapper'>
             <div className="cardWrapper__itemLeftSide">
@@ -26,13 +31,13 @@ const MainCard = ({ product }) => {
                     <article className='discriptionSide__pricePanel'>
                         <p className='price'>{product.price}</p>
                         <p className='greyReminder'>Обычная цена</p>
-                        <h3 className='salePrice'>{product.paymentcard && Number(product.price) * 50 / 100}</h3>
+                        <h3 className='salePrice'>{product.sale ? product.price.replace(',' , '.') * 50 / 100 : product.price}</h3>
                         <p className='Reminder'>С картой Северяночки
                             <span className='i'>i</span>
-                            <i className='content'>С картой Северяночки вы получите сколько то там процентов скидки</i>
+                            <i className='content'>С картой Северяночки вы получаете 50% скидки</i>
                         </p>
                     </article>
-                    <button className='addBasket'>
+                    <button onClick={()=>dispatch(setProduct(product))} className='addBasket'>
                         <span>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33337 28C7.33337 26.1591 8.82576 24.6667 10.6667 24.6667C12.5077 24.6667 14 26.1591 14 28C14 29.841 12.5077 31.3333 10.6667 31.3333C8.82576 31.3333 7.33337 29.841 7.33337 28ZM10.6667 26C9.56214 26 8.66671 26.8954 8.66671 28C8.66671 29.1046 9.56214 30 10.6667 30C11.7713 30 12.6667 29.1046 12.6667 28C12.6667 26.8954 11.7713 26 10.6667 26Z" fill="white" />

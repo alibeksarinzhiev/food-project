@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -13,14 +13,17 @@ import {searchProduct} from "../../redux/reducer/products";
 
 import './Header.scss'
 import './Header-media.scss'
+import { logOut } from '../../redux/reducer/userSlice';
+import RegisterPage from '../../pages/Register/RegisterPage';
 
 const Header = () => {
 
     const [catalog, setCatalog] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null);
+    const [count,SetCount] = useState(0)
+    const [openModal, setOpenModal] = useState(false);
 
     const {user} = useSelector((state) => state.users)
-    const {filter} = useSelector(stata=>stata.products)
     const dispatch = useDispatch()
     const {data} =useSelector(state=>state.cart)
 
@@ -32,8 +35,17 @@ const Header = () => {
         setAnchorEl(null);
     };
 
+    // console.log(data.reduce((acc,el,idx)=>{
+    //     return (
+    //         acc+el.count + data.length
+    //     )
+    // },0))
+    useEffect(()=>{
+        SetCount(data.reduce((acc,el)=> acc+ el.count,0))
+    },[data])
     return (
         <header className='header'>
+            <RegisterPage setOpenModal={setOpenModal} opneModal={openModal} />
             <div className="container">
                 <div className="header__menu">
                     <div className="header__logo">
@@ -83,17 +95,15 @@ const Header = () => {
                             </li>
                             <li>
                                 <Link to='/basket'>
-                                    <div className="header__count">
-                        
-                                   
+                                <div className="header__count">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6 21C6 19.6193 7.11929 18.5 8.5 18.5C9.88071 18.5 11 19.6193 11 21C11 22.3807 9.88071 23.5 8.5 23.5C7.11929 23.5 6 22.3807 6 21ZM8.5 19.5C7.67157 19.5 7 20.1716 7 21C7 21.8284 7.67157 22.5 8.5 22.5C9.32843 22.5 10 21.8284 10 21C10 20.1716 9.32843 19.5 8.5 19.5Z" fill="#414141" />
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18 21C18 19.6193 19.1193 18.5 20.5 18.5C21.8807 18.5 23 19.6193 23 21C23 22.3807 21.8807 23.5 20.5 23.5C19.1193 23.5 18 22.3807 18 21ZM20.5 19.5C19.6716 19.5 19 20.1716 19 21C19 21.8284 19.6716 22.5 20.5 22.5C21.3284 22.5 22 21.8284 22 21C22 20.1716 21.3284 19.5 20.5 19.5Z" fill="#414141" />
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 0.5C1.22386 0.5 1 0.723858 1 1C1 1.27614 1.22386 1.5 1.5 1.5H5.08051C5.83783 5.79147 6.60333 10.0643 7.24931 14.3709C7.43288 15.5947 8.48416 16.5 9.72165 16.5H19.8597C21.0514 16.5 22.0774 15.6588 22.3111 14.4903L23.7503 7.29417C23.936 6.36599 23.226 5.5 22.2795 5.5H7.66046C7.3575 5.5 7.07797 5.58901 6.84436 5.74093L5.99239 0.913107C5.95023 0.674179 5.74262 0.5 5.5 0.5H1.5ZM7.166 7.07417C7.12065 6.77187 7.35478 6.5 7.66046 6.5H22.2795C22.595 6.5 22.8316 6.78866 22.7698 7.09806L21.3305 14.2942C21.1903 14.9953 20.5747 15.5 19.8597 15.5H9.72165C8.97916 15.5 8.34839 14.9568 8.23825 14.2225L7.166 7.07417Z" fill="#414141" />
                                 </svg>
-
-                                {data.length}
-                                </div>
+                            
+                                        <p>{count >9 ? '9+' : count}</p>
+                                    </div>
                                 Корзина
                                 </Link>
                             </li>
@@ -121,9 +131,11 @@ const Header = () => {
                                     'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <MenuItem onClick={handleClose}><Link to="/register">Register</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Button onClick={() => setOpenModal(true)}>Register</Button></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/login">Login</Link></MenuItem>
-                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/vacancy">Вакансии</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/contacts">Контакты</Link></MenuItem>
+                                <MenuItem onClick={() => dispatch(logOut())}>Logout</MenuItem>
                             </Menu>
 
                         </div>
@@ -142,7 +154,6 @@ const Header = () => {
         </header>
     );
 };
-
 
 
 
