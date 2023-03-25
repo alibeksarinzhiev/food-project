@@ -49,6 +49,7 @@ const Home = () => {
                 </div>
                 <div className='home__cards'>
                     {
+<<<<<<< HEAD
                         all ? data.filter((el) => el.status === 'sale')
                             .map((el) => (
                                 <Card el={el} />
@@ -58,6 +59,17 @@ const Home = () => {
                                 .slice(0, 4)
                                 .map((el) => (
                                     <Card el={el} />
+=======
+                        all?   data.filter((el)=>el.sale)
+                            .map((el)=>(
+                                <Card el={el}/>
+                            ))
+                            :
+                            data.filter((el)=>el.sale)
+                                .slice(0,4)
+                                .map((el)=>(
+                                    <Card el={el}/>
+>>>>>>> 6634ddc0044936d3a75f9c15961d3d436c2ba4c9
                                 ))
                     }
                     {

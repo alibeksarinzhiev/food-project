@@ -6,6 +6,7 @@ import { loginSuccess } from '../../redux/reducer/userSlice';
 import TextField from '@mui/material/TextField';
 
 import './LoginPage.scss'
+import {Link} from "react-router-dom";
 
 const LoginPage = () => {
     const dispatch = useDispatch()
@@ -68,7 +69,7 @@ const LoginPage = () => {
                 <input className='form-sumbit-input' type="submit" />
                      <p class="signup-link">
         No account?
-        <a href="">Sign up</a>
+        <Link to={'/register'}>Sign up</Link>
       </p>
 
             </form>
