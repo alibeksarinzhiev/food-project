@@ -21,7 +21,7 @@ const Header = () => {
     const [catalog, setCatalog] = useState(false)
     const [anchorEl, setAnchorEl] = useState(null);
     const [count,SetCount] = useState(0)
-    const [openModal, setOpenModal] = useState(false);
+    const [openModal, setOpenModal] = useState(true);
 
     const {user} = useSelector((state) => state.users)
     const dispatch = useDispatch()
@@ -35,14 +35,13 @@ const Header = () => {
         setAnchorEl(null);
     };
 
-    // console.log(data.reduce((acc,el,idx)=>{
-    //     return (
-    //         acc+el.count + data.length
-    //     )
-    // },0))
+    
     useEffect(()=>{
-        SetCount(data.reduce((acc,el)=> acc+ el.count,0))
+        // SetCount(data.reduce((acc,el)=> acc+ el.count,0))
     },[data])
+
+    console.log(data)
+
     return (
         <header className='header'>
             <RegisterPage setOpenModal={setOpenModal} opneModal={openModal} />
@@ -131,7 +130,7 @@ const Header = () => {
                                     'aria-labelledby': 'basic-button',
                                 }}
                             >
-                                <MenuItem onClick={handleClose}><Button onClick={() => setOpenModal(true)}>Register</Button></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to='/register'>Register</Link></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/login">Login</Link></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/vacancy">Вакансии</Link></MenuItem>
                                 <MenuItem onClick={handleClose}><Link to="/contacts">Контакты</Link></MenuItem>
