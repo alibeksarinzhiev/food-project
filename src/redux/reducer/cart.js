@@ -12,7 +12,7 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         setProduct: (state, action) => {
-            state.data = state.data.findIndex((el) => el.id === action.payload.id) > -1 ? alert('уже есть') : [...state.data, { ...action.payload, count: 1, checked: false }]
+            state.data = state.data.findIndex((el) => el.id === action.payload.id) > -1 ? console.log('уже есть') : [...state.data, { ...action.payload, count: 1, checked: false }]
         },
         removeProduct: (state, action) => {
             state.data = state.data.filter(el => el.checked !== action.payload)
