@@ -2,10 +2,24 @@
   "users": [],
   "product": [
     {
+
+      "id": 1,
+      "image": "image/image (18).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": true,
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new",
+      "fav": "image/fav.png"
+    },
+    {
+
       "id": 2,
-      "image": "image/image (19).png",
-      "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
-      "price": "44.50",
+      "image": "image/img3.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -13,13 +27,14 @@
       "status": "sale",
       "fav": "image/fav.png",
       "category": "Milk"
+
     },
     {
       "id": 3,
-      "image": "image/img5.png",
+      "image": "image/img4.png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "599.99",
-      "sale": false,
+      "price": "49.39",
+      "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
@@ -29,9 +44,9 @@
     },
     {
       "id": 4,
-      "image": "image/img3.png",
-      "title": "qwretyyyyi",
-      "price": "20",
+      "image": "image/img5.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -42,9 +57,9 @@
     },
     {
       "id": 5,
-      "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44.50",
+      "image": "image/img6.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -55,22 +70,24 @@
     },
     {
       "id": 6,
-      "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44.50",
-      "sale": true,
+      "image": "image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
+
       "status": "sale",
       "fav": "image/fav.png",
       "category": "fruits"
+
     },
     {
       "id": 7,
-      "image": "image/img4.png",
+      "image": "image/image (19).png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "159.99",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
@@ -81,16 +98,18 @@
     },
     {
       "id": 8,
-      "image": "image/img4.png",
-      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
-      "price": "44.50",
-      "sale": true,
+      "image": "image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale",
       "fav": "image/fav.png",
       "category": "Bread"
+
+
     },
     {
       "id": 9,
@@ -171,6 +190,7 @@
       "category": "Bread"
     },
     {
+
       "id": 15,
       "image": "image/image (19).png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
@@ -184,6 +204,7 @@
       "category": "Bread"
     },
     {
+
       "id": 16,
       "image": "image/img3.png",
       "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
@@ -193,6 +214,7 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
+
       "fav": "image/fav.png",
       "category": "Bread"
     },
@@ -220,7 +242,10 @@
       "image": "https://globus-online.kg/upload/iblock/372/372bd4ce6492c2c36bd66ceb47ea6510.png",
       "category": "Milk",
       "status": "sale",
-      "id": 21
+      "id": 21,
+
+      "fav": "image/fav.png"
+
     }
   ],
   "listOfCategory": [

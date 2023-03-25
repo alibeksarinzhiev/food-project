@@ -1,0 +1,116 @@
+.header {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  padding: 13px 0 11px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo a {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding: 0 15px;
+
+    p {
+      color: #414141;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+.header__icons a {
+  display:flex;
+  flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+    row-gap: 8px;
+    left:10px;
+}
+
+.header__count {
+  display: flex;
+  column-gap: 5px;
+}
+ svg .header__count {
+  display: flex;
+  column-gap: 10px;
+  text-align: center;
+}
+  &__icons {
+    ul {
+      display: flex;
+      column-gap: 20px;
+
+      li {
+        display: flex;
+        row-gap: 9px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    }
+  }
+  
+
+
+
+
+  &__search {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    height: 40px;
+
+    label {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #70C05B;
+      border-radius: 4px;
+      padding: 10px;
+      width: 350px;
+      column-gap: 15px;
+
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .catalogBtnBox {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      padding: 0 25px 0 10px;
+      column-gap: 10px;
+      height: 100%;
+      color: white;
+      background-color: #70C05B;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #70C05B99;
+      }
+
+      .catalogBtn {
+        border: none;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+}

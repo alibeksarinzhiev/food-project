@@ -1,56 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {useDispatch, useSelector} from "react-redux";
-import {setProduct} from '../../redux/reducer/cart'
-import {addFavorite} from '../../redux/reducer/favourite'
-import {AiOutlineHeart} from 'react-icons/ai'
+import { useDispatch, useSelector } from "react-redux";
+import { setProduct } from '../../redux/reducer/cart'
+import { addFavorite } from '../../redux/reducer/favourite'
 
 import './Card.scss'
 
+<<<<<<< HEAD
 
 const Card = ({el}) => {
+=======
+const Card = ({ el }) => {
+>>>>>>> 78343b6a8595e8386a7e2dbe60139656d458ad59
 
 
     const dispatch = useDispatch()
 
-    const {data} = useSelector(state=>state.cart)
+    const { data } = useSelector((state) => state.products)
 
-    const fav = useSelector(state=>state.favourite)
-
-
-
-    
     return (
         <div key={el.id} className='card'>
             <Link to={`/single/${el.id}`}>
-                <img src={el.image} alt=""/>
+                <img src={el.image} alt="" />
             </Link>
             <div className='card__price'>
-                <h2 className='card__card'>{el.price} <br/>
-                <span>
-                    {el.paymentcard}
-                </span>
-                </h2>
-                <p className='card__cash'>{el.withoutsale} <br/>
+                <h2 className='card__card'>{el.price} <br />
                     <span>
-                    {el.paymentcash}
-                </span>
+                        {el.paymentcard}
+                    </span>
+                </h2>
+                <p className='card__cash'>{el.withoutsale} <br />
+                    <span>
+                        {el.paymentcash}
+                    </span>
                 </p>
             </div>
             <p className='card__text'>{el.title}</p>
 
-            <button className={`${data.findIndex((item)=>item.id === el.id) > -1? 'btnadded':'btnadd'}`} onClick={()=>dispatch(setProduct(el))}>В корзину</button>
-                {
-                el.sale ? <div className='card__sale'> 50% </div>: ''
-                }
-                    {/* <img alt='image/fav.png' src='' className='fav'/> */}
-
-
-
-            <span className={`${fav.data.findIndex((item)=>item.id===el.id)>-1
-            ?'card__checked' : 'card__heart'}`} onClick={()=>dispatch(addFavorite(el))}>
-                <AiOutlineHeart/>
-            </span>
+            <button className={`${data.findIndex((item) => item.id === el.id) > -1 ? 'btnadded' : 'btnadd'}`} onClick={() => dispatch(setProduct(el))}>В корзину</button>
+            {
+                el.sale ? <div className='card__sale'> 50% </div> : ''
+            }
+            {/* <img alt='image/fav.png' src='' className='fav'/> */}
+            <img onClick={() => dispatch(addFavorite(el))} src={el.fav} alt="" className='fav' />
         </div>
     );
 };
