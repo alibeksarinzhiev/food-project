@@ -1,0 +1,330 @@
+.basket {
+    background: #E5E5E5;
+}
+
+.basket-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket-pro {
+    column-gap: 50px;
+}
+
+.links {
+    display: flex;
+    column-gap: 10px;
+    padding: 25px 0;
+}
+
+.top-bas {
+    align-items: start;
+    color: #414141;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.button {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    column-gap: 10px;
+}
+.tick-button{
+    color: #70C05B;
+    background: #E5FFDE;
+    border-radius: 4px;
+    border: none;
+    font-weight: 400;
+    padding: 5px 5px
+}
+
+.buttons-opt {
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 8px;
+    column-gap: 15px;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.buttons-opt button {
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    background: #70C05B;
+    border: 1px solid #F3F2F1;
+    border-radius: 4px;
+}
+
+.buttons-opt p {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #606060 ;
+}
+
+.left-basket-product {
+    // width: 850px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 24px 0;
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+
+    .checked {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.left-product {
+    display: flex;
+    justify-content: center;
+    padding: 4px 5px;
+}
+
+.products-img {
+    height: 60px;
+    border-radius: 4px;
+}
+
+ .products-name{
+    display: grid;
+ }
+.product-name {
+    display: flex;
+    width: 480px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #414141;
+    justify-content: space-between;
+}
+
+.product-price {
+    display: flex;
+    padding: 70px 0;
+    column-gap: 15px;
+}
+
+.products-price {
+    font-size: 12px;
+    color: #414141;
+}
+
+.products-count {
+    font-size: 12px;
+    color: #606060;
+}
+
+.right-product {
+    display: flex;
+    padding: 8px 5px;
+    align-items: center;
+}
+
+.add-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    background: #70C05B;
+    column-gap: 10px;
+    margin-left: 60px;
+    border-radius: 4px;
+}
+.pluse-add-card{
+    padding: 5px 5px;
+    text-align: center;
+    border: none;
+
+}
+.minus-add-card{
+    padding: 5px 5px;
+    text-align: center;
+    border: none;
+}
+
+
+.price-product-basket{
+    font-size: 15px;
+    text-align: right;
+    color: #414141;
+    margin-left: 25px;
+}
+
+// скидочная карта
+.right-card-basket {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    padding: 15px;
+}
+
+.right-basket-toggle {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+/* Genel stil */
+.toggle-switch {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+}
+
+/* Giriş stil */
+.toggle-switch .toggle-input {
+    display: none;
+}
+
+/* Anahtarın stilinin etrafındaki etiketin stil */
+.toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #70C05B;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Anahtarın yuvarlak kısmının stil */
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+.toggle-switch .toggle-input:checked+.toggle-label {
+    background-color: #4CAF50;
+}
+
+.toggle-switch .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
+}
+
+/* Light tema */
+.toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label {
+    background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label::before {
+    transform: translateX(6px);
+}
+
+/* Dark tema */
+.toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label {
+    background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
+}
+
+.right-card-basket {
+    display: grid;
+    justify-content: space-around;
+}
+
+.sum-totals {
+    color: #414141
+}
+
+.discount-basket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-card {
+    color: #8F8F8F;
+}
+
+.card-discount {
+    color: #FF6633;
+}
+
+.count-basket {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.total-basket {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.card-bonus {
+    color: #70C05B !important;
+    text-align: center;
+    display: flex;
+    font-size: 12px;
+    top: 8px;
+}
+
+.line {
+    background: #F3F2F1;
+    width: 272px;
+    height: 2px;
+    margin: 28px 0;
+}
+
+.card-bonus img {
+    height: 10px;
+    width: 24px;
+    display: flex;
+}
+
+.min-order {
+    height: 24px;
+    background: #D80000;
+    border-radius: 4px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin: 27px 0 20px;
+}
+
+.place-order {
+    text-align: center;
+    font-size: 24px;
+    line-height: 150%;
+    color: #FF6633;
+    padding: 20px 16px;
+    background: #FCD5BA;
+    border-radius: 4px;
+    border: none;
+}

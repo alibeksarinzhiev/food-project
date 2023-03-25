@@ -1,0 +1,108 @@
+.contacts {
+    padding: 100px 0 60px;
+    background-color: #FBF8EC;
+
+    .section__title {
+
+        .navPanel {
+            display: flex;
+            font-size: 12px;
+            column-gap: 25px;
+            font-weight: 400;
+            align-items: center;
+
+            svg {
+                font-size: 18px;
+            }
+
+            .greyName {
+                color: #8F8F8F;
+            }
+        }
+
+        .sectionName {
+            padding: 25px 0 30px;
+        }
+    }
+
+    .topItemsWrapper {
+        display: flex;
+        column-gap: 90px;
+        align-items: center;
+
+        .item {
+            display: grid;
+            align-items: flex-end;
+            column-gap: 5px;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 0.1fr 1fr;
+
+            p {
+                font-size: 22px;
+            }
+
+            .phone {
+                margin-top: 16px;
+                font-weight: 700;
+                grid-column-start: 2;
+            }
+        }
+    }
+
+    .branchWrapper {
+        padding-top: 100px;
+
+        .branchName {
+            font-size: 24px;
+            color: #414141;
+        }
+
+        .towns {
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            padding: 40px 0 22px;
+
+            button {
+                padding: 8px;
+                border: none;
+                color: #606060;
+                border-radius: 4px;
+                background-color: #ededec;
+            }
+        }
+
+        .itemWrapper {
+            display: flex;
+            column-gap: 60px;
+
+            .item {
+                &__title {
+                    font-size: 26px;
+                }
+
+                div {
+                    display: flex;
+                    column-gap: 5px;
+                    align-items: center;
+
+                    .phone {
+                        color: #414141;
+                        border-bottom: 1px solid black;
+                    }
+                }
+
+            }
+        }
+
+        .map {
+            padding-top: 30px;
+            
+            img{
+                width: 100%;
+                border-radius: 4px;
+                box-shadow: 1px 2px 3px 1px rgb(170, 170, 170);
+            }
+        }
+    }
+}
