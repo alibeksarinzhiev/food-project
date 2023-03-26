@@ -23,14 +23,6 @@ const Home = () => {
             .then(({data})=>dispatch(setAllProducts(data)))
     },[])
 
-
-    console.log(data)
-
-
-        
-         
-        
-
     const [all,setAll] = useState(false)
     const [allNew,setAllNew] = useState(false)
     const [allBuy,setAllBuy] = useState(false)

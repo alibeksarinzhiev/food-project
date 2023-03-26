@@ -1,0 +1,14 @@
+.special{
+    width: 100%;
+    
+  &_images{
+    display: flex;
+    justify-content: center;
+  }
+  h3{
+    font-weight: 700;
+font-size: 36px;
+margin-bottom: 40px;
+margin-left: 50px;
+  }
+}

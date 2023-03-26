@@ -1,0 +1,46 @@
+.register__wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px black;
+    align-items: center;
+    background: #f2f2f2;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ 
+
+// кнопка войти
+
+.form-section {
+    font-size: .85rem;
+  }
+  
+  .form-section a {
+    font-weight: bold;
+    color: #0066ff;
+    transition: color .3s ease;
+  }
+  
+  .form-section a:hover {
+    color: #005ce6;
+    text-decoration: underline;
+  }
+  .login-register{
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }

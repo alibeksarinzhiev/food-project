@@ -1,0 +1,42 @@
+.ourshops{
+    margin-top: 120px;
+}
+
+.shops{
+    h3{
+        font-weight: 700;
+font-size: 36px;
+margin-bottom: 44px;
+margin-left: 50px;
+    }
+    &_cities{
+        display: flex;
+        margin-bottom: 28px;
+        margin-left: 50px;
+    }
+    p{
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+margin-right: 24px;
+
+width: 86px;
+height: 32px;
+
+font-weight: 400;
+font-size: 12px;
+background: #F3F2F1;
+border-radius: 4px;
+    }
+    p:hover{
+        background: #70C05B;
+    }
+    img{
+        margin-left: 50px;
+        width: 90%;
+    }
+
+}

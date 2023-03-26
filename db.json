@@ -1,89 +1,121 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "qwerty@mail.com",
+      "password": "$2a$10$R4uyGDzMOdLCNikO8LfDNeMIOgy9DvQSOrb1eWYEsbRQvk5NKJGcK",
+      "login": "qwerty",
+      "id": 1
+    },
+    {
+      "email": "12342@mail.com",
+      "password": "$2a$10$a7PMjs0XhYU4yMRiZIfhe.pAvnsWs0aKs2PSv66MAk24y11yL2zAi",
+      "login": "qwerty",
+      "id": 2
+    }
+  ],
   "product": [
     {
+      "id": 1,
+      "image": "image/image (18).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": true,
+      "paymentcard": "С картой",
+      "paymentcash": "Наличными",
+      "withoutsale": "50",
+      "status": "new",
+      "fav": "image/fav.png"
+    },
+    {
       "id": 2,
-      "image": "image/image (19).png",
-      "title": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...",
-      "price": "44.50",
+      "image": "image/img3.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Milk"
     },
     {
       "id": 3,
-      "image": "image/img5.png",
+      "image": "image/img4.png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "599.99",
-      "sale": false,
+      "price": "49.39",
+      "sale": true,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "fruits"
     },
     {
       "id": 4,
-      "image": "image/img3.png",
-      "title": "qwretyyyyi",
-      "price": "20",
+      "image": "image/img5.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Milk"
     },
     {
       "id": 5,
-      "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44.50",
+      "image": "image/img6.png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Milk"
     },
     {
       "id": 6,
-      "image": "image/img3.png",
-      "title": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
-      "price": "44.50",
-      "sale": true,
+      "image": "image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "fruits"
     },
     {
       "id": 7,
-      "image": "image/img4.png",
+      "image": "image/image (19).png",
       "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
-      "price": "159.99",
+      "price": "49.39",
       "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "fruits"
     },
     {
       "id": 8,
-      "image": "image/img4.png",
-      "title": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
-      "price": "44.50",
-      "sale": true,
+      "image": "image/image (19).png",
+      "title": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      "price": "49.39",
+      "sale": false,
       "paymentcard": "С картой",
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 9,
@@ -95,7 +127,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 10,
@@ -107,7 +140,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "sale",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 11,
@@ -119,7 +153,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "new",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 12,
@@ -131,7 +166,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 13,
@@ -144,7 +180,7 @@
       "withoutsale": "50",
       "status": "prev",
       "fav": "image/fav.png",
-      "category": "milk"
+      "category": "Milk"
     },
     {
       "id": 14,
@@ -156,7 +192,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 15,
@@ -168,7 +205,8 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
-      "fav": "image/fav.png"
+      "fav": "image/fav.png",
+      "category": "Bread"
     },
     {
       "id": 16,
@@ -180,6 +218,34 @@
       "paymentcash": "Наличными",
       "withoutsale": "50",
       "status": "prev",
+      "fav": "image/fav.png",
+      "category": "Bread"
+    },
+    {
+      "price": "40",
+      "id": 17
+    },
+    {
+      "price": "50",
+      "image": "https://globus-online.kg/upload/iblock/c3a/c3a70151365ba8ff188f9cc088ac24b6.png",
+      "id": 18
+    },
+    {
+      "price": "100",
+      "image": "https://globus-online.kg/upload/iblock/372/372bd4ce6492c2c36bd66ceb47ea6510.png",
+      "id": 19
+    },
+    {
+      "price": "190",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Vj2BmFdKGZ0CihJ2G5P7rLxUkwgizO96oQ&usqp=CAU",
+      "id": 20
+    },
+    {
+      "price": "100",
+      "image": "https://globus-online.kg/upload/iblock/372/372bd4ce6492c2c36bd66ceb47ea6510.png",
+      "category": "Milk",
+      "status": "sale",
+      "id": 21,
       "fav": "image/fav.png"
     }
   ],
@@ -187,49 +253,80 @@
     {
       "id": 1,
       "name": "Молоко, сыр, яйцо",
-      "category": "MilkProducts"
-    },
-    {
-      "id": 2,
-      "name": "Хлеб",
-      "category": "Хлеб"
-    },
-    {
-      "id": 3,
-      "name": "Фрукты и овощи",
-      "category": "Фрукты и овощи"
-    },
-    {
-      "id": 4,
-      "name": "Замороженные продукты",
-      "category": "Замороженные продукты"
-    },
-    {
-      "id": 5,
-      "name": "Напитки",
-      "category": "Напитки"
-    },
-    {
       "category": "Milk",
-      "img": ""
+      "img": "Images/img.png"
     },
     {
       "id": 2,
       "name": "Хлеб",
       "category": "Bread",
-      "img": ""
+      "img": "Images/img (1).png"
     },
     {
       "id": 3,
       "name": "Фрукты и овощи",
       "category": "fruits",
-      "img": ""
+      "img": "Images/img (2).png"
     },
     {
       "id": 4,
       "name": "Замороженные продукты",
-      "category": "Frozen food",
-      "img": ""
+      "category": "frozen products",
+      "img": "Images/img (3).png"
+    },
+    {
+      "id": 5,
+      "name": "Напитки",
+      "category": "drinks",
+      "img": "Images/img (4).png"
+    },
+    {
+      "id": 6,
+      "name": "Кондитерские изделия",
+      "category": "Candy",
+      "img": "Images/img (5).png"
+    },
+    {
+      "id": 7,
+      "name": "Чай, кофе",
+      "category": "Tea",
+      "img": "Images/img (6).png"
+    },
+    {
+      "id": 8,
+      "name": "Бакалея",
+      "category": "bakaleya",
+      "img": "Images/img (7).png"
+    },
+    {
+      "id": 9,
+      "name": "Здоровое питание",
+      "category": "Healthy food",
+      "img": "Images/img (8).png"
+    },
+    {
+      "id": 10,
+      "name": "Зоотовары",
+      "category": "Zoo products",
+      "img": "Images/img (9).png"
+    },
+    {
+      "id": 11,
+      "name": "Детское питание",
+      "category": "Children food",
+      "img": "Images/img (10).png"
+    },
+    {
+      "id": 12,
+      "name": "Мясо, птица, колбаса",
+      "category": "Meat",
+      "img": "Images/img (11).png"
+    },
+    {
+      "id": 9,
+      "name": "Непродовольственные товары",
+      "category": "non-food products",
+      "img": "Images/img (12).png"
     }
   ]
 }

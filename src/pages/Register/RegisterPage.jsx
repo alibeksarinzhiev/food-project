@@ -8,6 +8,7 @@ const RegisterPage = ({opneModal, setOpenModal}) => {
 
     const [email, setEmail] = useState("")
     const [login, setLogin] = useState("")
+    const [err, setErr] = useState("")
     const [password, setPassword] = useState("")
     
 
@@ -15,6 +16,13 @@ const RegisterPage = ({opneModal, setOpenModal}) => {
 
     const postUser = (e) => {
         e.preventDefault()
+        setErr("")
+
+        if(login.length === 0) {
+            setErr("Please vaild Login")
+        }
+
+        console.log(err)
 
         const user = {
             email,

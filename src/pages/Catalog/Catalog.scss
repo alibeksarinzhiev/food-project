@@ -1,15 +1,21 @@
 .catalog{
 padding: 100px 0 100px 0;
+// width: 1263px;
+.container{
+  width: 1170px;
+
+}
 h2{
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 10px;
     color: #414141;
+    padding-top: 20px;
 }
   &__cards{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 15px;
+    column-gap: 20px;
     row-gap: 30px;
     margin-top: 30px;
   }

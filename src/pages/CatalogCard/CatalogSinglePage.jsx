@@ -1,26 +1,29 @@
-import React, {useEffect, useState, useParams} from 'react';
+import React, {useEffect, useState} from 'react';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import {Link, useLocation, useNavigate} from 'react-router-dom';
 import Toggle from './img/Toggle.svg'
 import {GrFormClose} from 'react-icons/gr'
-
 import './catalogSinglePage.scss'
 
 const CatalogSinglePage = () => {
 
     const [product, setProduct] = useState([])
+
+    let params = useLocation()
+    let path = params.pathname.split('/').at(-1)
+    let navigate = useNavigate()
+
   
-
-    // const { id } = useParams()
-    // useEffect(() => {
-    //     const productUrl = `http://localhost:8080/product/${id}`
+    useEffect(() => {
+        const productUrl = `http://localhost:8080/product`
        
-    //     axios
-    //         .get(productUrl)
-    //         .then(({ data }) => setProduct(data))
+        axios
+            .get(productUrl)
+            .then(({ data }) => setProduct(data))
 
-    // }, [])
+
+    }, [])
     return (
         <section className='catalogSinglePage'>
             <div className="container">
@@ -29,16 +32,16 @@ const CatalogSinglePage = () => {
                 <article>
                     <h3>Главная</h3>
                         <ArrowForwardIosIcon />
-                        <h3>Каталог</h3>
+                        <h3 onClick={()=>navigate(-1)}>Каталог</h3>
                         <ArrowForwardIosIcon />
                         <h3 className='articleProductName'>
-                        {product.title}
+                            {path}
                             </h3>
                     </article>
                     </div>
 
                     <h2 className='productName'>
-                    {product.title}
+                        {path}
                         </h2>
                         <div className="productLinks">
                        <p> <Link> Товары нашего производства</Link> </p>
@@ -87,27 +90,34 @@ const CatalogSinglePage = () => {
                             <button className='search'>Очистить фильтры <GrFormClose/></button>
                         </div>
                         <div className="catalogCard__right__products">
-                            
-                                        <div className="catalogCard__right__products__product">
-                                            <img src= '' alt="img"/>
-                                            
-                                                    <div className="catalogCard__right__product__price">
-                                                        <div className='sale'>-50%</div>
-                                                    <h3>el.price</h3>
-                                                    <h4>withoutsale</h4>
-                                                    </div>  
-                                                    <div className="catalogCard__right__products--price">
-                                                        <h3>price</h3></div>
-                                            {
-                                            
-                                 <div className="catalogCard__right__products__pay">
-                              <p>paymentcard</p>
-                             <p>status</p>
-                          </div>
-                     }
-                              <h6>title</h6>
-           <button>В корзину</button>
-               </div>
+                            {
+                                product.filter((el)=>(
+                                    el.category===path
+                                )).map((el)=>(
+                                    <div className="catalogCard__right__products__product">
+                                        <img src={el.image} alt="img"/>
+
+                                        <div className="catalogCard__right__product__price">
+                                            <div className='sale'>-50%</div>
+                                            <h3>{el.price}</h3>
+                                            <h4>{el.withoutsale}</h4>
+                                        </div>
+                                        <div className="catalogCard__right__products--price">
+                                            <h3>{el.price}</h3></div>
+
+
+                                        <div className="catalogCard__right__products__pay">
+                                            <p>{el.paymentcard}</p>
+                                            <p>{el.status}</p>
+                                        </div>
+
+                                        <h6>{el.title}</h6>
+                                        <h2>{el.category}</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                ))
+                            }
+
                 
                         </div>
                         <div className="catalogCard__right__btn">
